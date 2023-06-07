@@ -1,18 +1,21 @@
 <template>
-  <HelloWorld />
+  <presentation/>
+  <formation/>
 </template>
 
 <script>
 import { defineComponent } from 'vue';
-
-// Components
-import HelloWorld from '../components/HelloWorld.vue';
+import Presentation from '@/components/Presentation.vue';
+import Formation from '@/components/Formation.vue';
 
 export default defineComponent({
   name: 'HomeView',
-
   components: {
-    HelloWorld,
+    Presentation,
+    Formation,
   },
 });
 </script>
+
+<style scoped>
+</style>

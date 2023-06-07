@@ -1,3 +1,7 @@
 {
-  "message": "hello i18n !!"
+  "App" :
+  {
+    "Title" : "RENAULT Kylian",
+    "Version" : "1.0.0"
+  }
 }
