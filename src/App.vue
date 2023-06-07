@@ -1,11 +1,18 @@
 <template>
   <v-app 
-  class="App"
+  id="App"
   :theme="is_light ? 'light' : 'dark'">
     <v-app-bar app 
     :title="$t('App.Title')"
     >
       <v-spacer></v-spacer>
+      <!-- Catégories : Présentation, formation, expereiences, projet, hobbies-->
+      <v-btn @click="goTo('#App')">{{ $t('App.Presentation.FirstTitle') }}</v-btn>
+      <v-btn @click="goTo('#Formation')">{{ $t('App.Formation.Title') }}</v-btn>
+      <v-btn @click="goTo('#Experience')">{{ $t('App.Experience.Title') }}</v-btn>
+      <v-btn @click="goTo('#Project')">{{ $t('App.Project.Title') }}</v-btn>
+      <v-btn @click="goTo('#Hobbie')">{{ $t('App.Hobbies.Title') }}</v-btn>
+
       <v-btn
         icon
         @click="is_light = !is_light"
@@ -46,6 +53,13 @@ export default {
       localStorage.setItem('language', this.language);
       this.$i18n.locale = this.language;
     },
+    goTo(route) {
+      window.scroll({
+        behavior: 'smooth',
+        left: 0,
+        top: document.querySelector(route).offsetTop
+      });
+    }
   },
   watch: {
     is_light() {

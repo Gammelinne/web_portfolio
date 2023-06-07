@@ -3,7 +3,21 @@
         "Title": "RENAULT Kylian",
         "Presentation": {
             "Title": "Developpeur Web & Mobile",
-            "Description": "Actuellement étudiant en troisième année de cycle ingénieur, ayant effectué mes deux premières années en classe préparatoire à l'école CESI de Caen, je suis à la recherche d'un stage de 17 semaines à partir du 4 septembre 2023. Passionné d'informatique, je travaille également sur une application web similaire à un réseau social avec authentification et websockets, que vous pouvez retrouver à l'adresse suivante :"
+            "Description": "Actuellement étudiant en troisième année de cycle ingénieur, ayant effectué mes deux premières années en classe préparatoire à l'école CESI de Caen, je suis à la recherche d'un stage de 17 semaines à partir du 4 septembre 2023. Passionné d'informatique, je travaille également sur une application web similaire à un réseau social avec authentification et websockets, que vous pouvez retrouver à l'adresse suivante :",
+            "Resume": "CV",
+            "CoverLetter": "Lettre de motivation"
+
+        },
+        "Formation":{
+            "Title": "Formations",
+            "Website": "En savoir plus",
+            "One": {
+                "Title": "Cycle ingénieur",
+                "Location": "4 place boston 14200 Hérouville-Saint-Clair",
+                "Description": "CESI Caen",
+                "Date": "2023 - Aujourd'hui",
+                "Website": "https://www.cesi.fr/"
+            }
         }
     }
 }

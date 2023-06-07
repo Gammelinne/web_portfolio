@@ -22,7 +22,7 @@ function loadLocaleMessages() {
 export default createI18n({
   globalInjection: true,
   legacy: false,
-  locale: localStorage.getItem('language') || process.env.VUE_APP_I18N_LOCALE || 'en',
+  locale: localStorage.getItem('language') || navigator.language.split('-')[0],
   fallbackLocale: 'en',
   messages: loadLocaleMessages()
 })

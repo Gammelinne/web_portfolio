@@ -2,6 +2,23 @@
   "App" :
   {
     "Title" : "RENAULT Kylian",
-    "Version" : "1.0.0"
+    "Presentation" :{
+      "FirstTitle" : "Presentation",
+      "Title" : "Web & Mobile Developer",
+      "Description" : "Currently a student in my third year of engineering studies, having completed my first two years in a preparatory class at CESI school in Caen, I am looking for a 17-week internship starting on September 4th, 2023. Passionate about computer science, I am also working on a web application similar to a social network with authentication and websockets, which you can find at the following address:",
+      "Resume" : "Resume",
+      "CoverLetter" : "Cover Letter"
+    },
+    "Formation" : {
+      "Title" : "Formations",
+      "Website" : "Learn more",
+      "One" : {
+        "Title" : "CESI Engineering School: Computer Science specialization",
+        "Date" : "Since September 2022",
+        "Website" : "https://www.cesi.fr/",
+        "Description": "CESI Caen",
+        "Location" : "CESI Engineering School - 14200 Hérouville Saint-Clair"
+      }
+    }
   }
 }
