@@ -2,49 +2,84 @@
     <div id="Experience">
       <v-container>
         <v-card>
-          <v-card-text>
-            <h1 class="my-5 text-center">{{ $t('App.Experience.Title') }}</h1>
-            <v-card v-for="Experience in Experiences" :key="Experience.id" class="my-4">
-              <v-row>
-                <v-col cols="12" md="8">
-                  <v-card-title>
-                    <h4>{{ Experience.title }}</h4>
-                  </v-card-title>
-                  <v-card-text>
-                    <v-chip>{{ Experience.location }}</v-chip>
-                  </v-card-text>
-                </v-col>
-                <v-col cols="12" md="4">
-                  <v-card-title>
-                    <h6>{{ Experience.date }}</h6>
-                  </v-card-title>
-                  <v-card-text>
-                    <p>{{ Experience.description }}</p>
-                  </v-card-text>
-                </v-col>
-              </v-row>
-              <v-card-actions>
+          <h1 class="text-center my-5">{{ $t('App.Experience.Title') }}</h1>          
+          <v-timeline
+        v-if="!is_mobile"
+        >
+          <v-timeline-item
+            v-for="experience in Experiences"
+            :key="experience.id"
+            color="primary"
+            dot-color="primary"
+            size="small"
+          >
+            <div>
+              <v-card variant="outlined" class="mx-5">
+                <v-card-title>
+                  <h4>{{ experience.title }}</h4>
+                </v-card-title>
+                <v-card-subtitle>
+                  <h4>{{ experience.location }}</h4>
+                </v-card-subtitle>
+                <v-card-subtitle>
+                  <h4>{{ experience.date }}</h4>
+                </v-card-subtitle>
+                <v-card-text>
+                  <p style="text-align: justify" v-for="description in experience.description.split(' -')" :key="description">- {{ description }}</p>
+                </v-card-text>
+                <v-card-actions>
+                  <v-btn
+                    v-if="experience.website"
+                    text
+                    :href="experience.website"
+                    target="_blank"
+                  ><v-icon>mdi-web</v-icon> {{ $t('App.Experience.Website') }}
+                  </v-btn>
+                </v-card-actions>
+              </v-card>
+            </div>
+          </v-timeline-item>
+        </v-timeline>
+        <v-timeline
+        v-else
+        align="start" side="end"
+        >
+          <v-timeline-item
+            v-for="experience in Experiences"
+            :key="experience.id"
+            color="primary"
+            dot-color="primary"
+            size="small"
+          >
+            <!--hover to see content-->
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on }">
                 <v-btn
-                text
-                :href="Experience.website"
-                target="_blank"
-                >
-                <v-icon class="mx-2">mdi-link</v-icon>
-                {{ $t('App.Experience.Website') }}
+                  v-on="on"
+                  text
+                  size="small"
+                > 
+                <!--En savoir +-->
+                <v-icon>mdi-information</v-icon>
+                {{ experience.title }}
                 </v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-card-text>
+              </template>
+              <span>{{ $t('App.Experience.description') }}</span>
+            </v-tooltip>
+          </v-timeline-item>
+          </v-timeline>
         </v-card>
       </v-container>
     </div>
   </template>
   
   <script>
+
   export default {
     name: 'ExperienceComponent',
     data: () => ({
-      Experiences: []
+      Experiences: [],
+      is_mobile: false
     }),
     watch: {
       '$i18n.locale': {
@@ -52,10 +87,15 @@
           this.updateExperiences();
         },
         deep: true
-      }
+      },
     },
     created: function(){
       this.updateExperiences();
+      this.is_mobile = window.innerWidth < 850;
+      //create listener to update is_mobile
+      window.addEventListener('resize', () => {
+        this.is_mobile = window.innerWidth < 850;
+      });
     },
     methods: {
       updateExperiences(){
@@ -67,6 +107,7 @@
           website: this.$t('App.Experience.One.Website'),
           date: this.$t('App.Experience.One.Date'),
           description: this.$t('App.Experience.One.Description'),
+          image: this.$t('App.Experience.One.Image'),
         },
         {
           id: 2,
@@ -92,6 +133,22 @@
           date: this.$t('App.Experience.Four.Date'),
           description: this.$t('App.Experience.Four.Description'),
         },
+        {
+          id: 5,
+          title: this.$t('App.Experience.Five.Title'),
+          location: this.$t('App.Experience.Five.Location'),
+          website: this.$t('App.Experience.Five.Website'),
+          date: this.$t('App.Experience.Five.Date'),
+          description: this.$t('App.Experience.Five.Description'),
+        },
+        {
+          id: 6,
+          title: this.$t('App.Experience.Six.Title'),
+          location: this.$t('App.Experience.Six.Location'),
+          website: this.$t('App.Experience.Six.Website'),
+          date: this.$t('App.Experience.Six.Date'),
+          description: this.$t('App.Experience.Six.Description'),
+        },
       ]
       }
     },
@@ -99,14 +156,8 @@
   </script>
   
   <style scoped>
-  @media screen and (min-width: 600px) {
-    #Experience {
-      margin-top: 30%;
-    }
-  }
-  @media screen and (max-width: 600px) {
-    #Experience {
-      margin-top: 50%;
-    }
-  }
+.responsive-card {
+  max-width: 100%;
+  margin: 0 auto;
+}
   </style>

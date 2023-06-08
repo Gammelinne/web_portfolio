@@ -16,8 +16,29 @@
         "Title" : "CESI Engineering School: Computer Science specialization",
         "Date" : "Since September 2022",
         "Website" : "https://www.cesi.fr/",
-        "Description": "CESI Caen",
-        "Location" : "CESI Engineering School - 14200 Hérouville Saint-Clair"
+        "Description": "Automony, Teamwork, Network, Development, Project Management, English",
+        "Location" : "4 place boston - 14200 Hérouville-Saint-Clair"
+      },
+      "Two":{
+        "Title" : "Integrated preparatory class: Computer Science minor",
+        "Date" : "09/2020 - 07/2022",
+        "Website" : "https://www.cesi.fr/",
+        "Description": "Group work,Mathematics,Computer science,Physics,English",
+        "Location" : "4 place boston - 14200 Hérouville-Saint-Clair"
+      },
+      "Three" : {
+        "Title" : "First year of Bachelor's degree in Physics with computer science option",
+        "Date" : "09/2019 - 07/2020",
+        "Website" : "https://uniformsup.unicaen.fr/catalogue/formation/licences/5358-licence-physique?s=ufrdessciences&r=1485246625394",
+        "Description": "Mathematics,Physics,Electricity,English",
+        "Location" : "Avenue de la Côte de Nacre - 14000 Caen"
+      },
+      "Four" : {
+        "Title" : "Obtaining the baccalaureate diploma Series S option SVT",
+        "Date" : "09/2016 - 07/2019",
+        "Website" : "https://lycee-salvador-allende.etab.ac-caen.fr/",
+        "Description": "Mathematics,Physics,English,Spanish,SVT,History,Geography,Philosophy",
+        "Location" : "15 Rue Guyon de Guercheville - 14200 Hérouville Saint Clair"
       }
     }
   }

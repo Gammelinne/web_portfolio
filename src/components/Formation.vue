@@ -1,26 +1,24 @@
 <template>
   <div id="Formation">
     <v-container>
-      <v-card>
+      <v-card >
         <v-card-text>
           <h1 class="my-5 text-center">{{ $t('App.Formation.Title') }}</h1>
           <v-card v-for="formation in formations" :key="formation.id" class="my-4">
             <v-row>
-              <v-col cols="12" md="8">
-                <v-card-title>
-                  <h4>{{ formation.title }}</h4>
-                </v-card-title>
+              <v-col cols="12" md="9">
+                <h4 class="mx-5">{{ formation.title }}</h4>
                 <v-card-text>
-                  <v-chip>{{ formation.location }}</v-chip>
+                  <p>{{ formation.location }}</p>
+                </v-card-text>
+                <v-card-text>
+                  <v-chip class="mr-1 mt-1" v-for="description in formation.description.split(',')" :key="description">{{ description }}</v-chip>
                 </v-card-text>
               </v-col>
-              <v-col cols="12" md="4">
+              <v-col cols="12" md="3">
                 <v-card-title>
                   <h6>{{ formation.date }}</h6>
                 </v-card-title>
-                <v-card-text>
-                  <p>{{ formation.description }}</p>
-                </v-card-text>
               </v-col>
             </v-row>
             <v-card-actions>
@@ -101,12 +99,12 @@ export default {
 <style scoped>
 @media screen and (min-width: 600px) {
   #Formation {
-    margin-top: 30%;
+    margin-top: 14%;
   }
 }
 @media screen and (max-width: 600px) {
   #Formation {
-    margin-top: 50%;
+    margin-top: 40%;
   }
 }
 </style>

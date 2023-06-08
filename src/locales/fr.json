@@ -12,11 +12,79 @@
             "Title": "Formations",
             "Website": "En savoir plus",
             "One": {
-                "Title": "Cycle ingénieur",
-                "Location": "4 place boston 14200 Hérouville-Saint-Clair",
-                "Description": "CESI Caen",
-                "Date": "2023 - Aujourd'hui",
-                "Website": "https://www.cesi.fr/"
+                "Title": "CESI Ecole d'ingenieur : Spécialité informatique",
+                "Date": "Depuis septembre 2023",
+                "Website": "https://www.cesi.fr/",
+                "Description": "Autonomie,Travail de groupe,Réseau,Developpement,Gestion de projet,Anglais",
+                "Location": "4 place boston - 14200 Hérouville-Saint-Clair"
+            },
+            "Two": {
+                "Title": "Classe préparatoire intégrée : mineure informatique",
+                "Date": "09/2020 - 07/2022",
+                "Website": "https://www.cesi.fr/",
+                "Description": "Travail de groupe,Mathématiques,Informatique,Physique,Anglais",
+                "Location": "4 place boston - 14200 Hérouville-Saint-Clair"
+            },
+            "Three": {
+                "Title": "Première année de licence de Physique option informatique ",
+                "Date": "09/2019 - 07/2020",
+                "Website": "https://uniformsup.unicaen.fr/catalogue/formation/licences/5358-licence-physique?s=ufrdessciences&r=1485246625394",
+                "Description": "Mathématiques,Physique,Electricité,Anglais",
+                "Location": "Avenue de la Côte de Nacre - 14000 Caen"
+            },
+            "Four": {
+                "Title": "Obtention du diplôme du baccalauréat Série S option SVT",
+                "Date": "09/2016 - 07/2019",
+                "Website": "https://lycee-salvador-allende.etab.ac-caen.fr/",
+                "Description": "Mathématiques,Physique,Anglais,Espagnol,SVT,Histoire-Géographie,Philosophie",
+                "Location": "15 Rue Guyon de Guercheville - 14200 Hérouville Saint Clair"
+            }
+        },
+        "Experience": {
+            "Title": "Experiences professionnelles",
+            "Website": "En savoir plus",
+            "One" : {
+                "Title" : "Stage developpeur web/mobile",
+                "Date" : "01/2023 - 04/2023",
+                "Website" : "https://qwice.org/",
+                "Description" : "Rendre une application web existante compatible avec une application mobile native Android/iOS avec le framework Capacitor.js (android studio / xcode). - Ajouter des notifications push à l'application (firebase / php). - Ajout et correction de fonctionnalités sur le frontend (VueJs).",
+                "Location" : "Normandie incubation - 14000 Caen",
+                "Image": "https://www.normandie-incubation.com/wp-content/uploads/2021/11/Logo_Qwice.jpg"
+            },
+            "Two": {
+                "Title": "Stage développeur fullstack",
+                "Date": "04/2022 - 08/2022",
+                "Website": "https://boomerangweb.net/gestion-des-achats-bons-de-commande/",
+                "Description": "Création d'une interface gestion clients permettant la centralisation des serveurs (Laravel + Vuejs + MySQL). - Création de scripts bash permettant de connaitre l'état des serveurs (bash). - Tests unitaires des fonctions les plus critiques (PHPUnit + Mockery).",
+                "Location": "Boomerang Web - 14000 Caen"
+            },
+            "Three": {
+                "Title": "Assistant fabmanager bénévole",
+                "Date": "09/2021 - 01/2022",
+                "Website": "https://www.lesaffreteurs.com/",
+                "Description": "Cours d'informatiques basiques (Word, Excel, Powerpoint, Internet, etc.) à des personnes débutantes. - Utilisation des machines du fablab (imprimante 3D, découpeuse laser, etc.).",
+                "Location": "Centre socioculturel - Ouistreham"
+            },
+            "Four": {
+                "Title": "Employé de restauration",
+                "Date": "07/2019 - 09/2019",
+                "Website": "https://festyland.com/",
+                "Description": "Préparation des commandes. - Service des clients. - Nettoyage des locaux.",
+                "Location": "Festyland - 14652 Carpiquet"
+            },
+            "Five": {
+                "Title" : "Ouvrier manœuvre",
+                "Date" : "06/2020 - 08/2020",
+                "Website": "https://www.maugergazmedicaux.fr/nos-services/vente-de-materiels-dalimentation-gaz-medicaux/",
+                "Description" : "Installation de tuyaux d'oxygène et d'air médical dans des hôpitaux. - Installation de prises murales d'oxygène et d'air médical dans des hôpitaux. - Installation de centrales d'oxygène et d'air médical dans des hôpitaux.",
+                "Location" : "Mauger Gaz Médicaux - 14460 Colombelles"
+            },
+            "Six": {
+                "Title" : "Ouvrier manœuvre",
+                "Date" : "08/2018",
+                "Website": "https://www.maugergazmedicaux.fr/nos-services/vente-de-materiels-dalimentation-gaz-medicaux/",
+                "Description" : "Installation de tuyaux d'oxygène et d'air médical dans des hôpitaux. - Installation de prises murales d'oxygène et d'air médical dans des hôpitaux. - Installation de centrales d'oxygène et d'air médical dans des hôpitaux.",
+                "Location" : "Mauger Gaz Médicaux - 14460 Colombelles"
             }
         }
     }

@@ -10,7 +10,7 @@
             <v-card-text>
               <h2 class="text-center my-3">
                 {{ $t('App.Presentation.Title') }}</h2>
-              <p>{{ $t('App.Presentation.Description') }} <a href="https://lahyra.com">Lahyra</a></p>
+              <p style="text-align: justify;">{{ $t('App.Presentation.Description') }} <a href="https://lahyra.com">Lahyra</a></p>
             </v-card-text>
             <v-card-actions>
               <v-btn
@@ -33,13 +33,13 @@
             <v-card-actions>
               <v-btn
                 text
-                href="https://github.com">
+                href="https://github.com/Gammelinne">
               <v-icon>mdi-github</v-icon>
                 GitHub
               </v-btn>
               <v-btn
                 text
-                href="https://www.linkedin.com">
+                href="https://www.linkedin.com/in/kylian-renault/">
               <v-icon>mdi-linkedin</v-icon>
                 LinkedIn
               </v-btn>
@@ -48,16 +48,15 @@
         </v-col>
       </v-row>
       <!--icon scroll down at the bottom center of the page-->
-      <v-row justify="center" class="ScrollButton">
-        <v-col cols="auto">
-         <a
-          icon
-          @click="scrollTo(this.is_clicked ? '#Presentation' : '#Formation')"
-          >
-          <v-icon>{{ this.is_clicked ? 'mdi-chevron-double-up' : 'mdi-chevron-double-down' }}</v-icon>
-        </a>
-        </v-col>
-      </v-row>
+      <v-container class="ScrollButton">
+        <v-row>
+          <v-col cols="12" md="12" class="text-center">
+            <v-btn icon @click="scrollTo(this.is_clicked ? '#Presentation' : '#Formation')">
+              <v-icon>{{ this.is_clicked ? 'mdi-chevron-double-up' : 'mdi-chevron-double-down' }}</v-icon>
+            </v-btn>
+          </v-col>
+        </v-row>
+      </v-container>
     </v-container>
   </div>
 </template>
@@ -68,9 +67,20 @@ export default {
   data: () => ({
     is_clicked: false,
   }),
-  watch: {
+  created: function(){
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
+    handleScroll() {
+      if (window.scrollY > 350) {
+        this.is_clicked = true;
+      } else {
+        this.is_clicked = false;
+      }
+    },
     scrollTo(element) {
       if(element == '#Presentation'){
         window.scroll({
@@ -106,10 +116,9 @@ export default {
   justify-content: center;
 }
 .ScrollButton {
-  position: absolute;
+  position: relative;
   z-index: 1;
-  top: 90vh;
-  left: 50%;
+  margin-top: 20%;
   transform: translateX(-50%);
   cursor: pointer;
   /* animation bouton floating */
