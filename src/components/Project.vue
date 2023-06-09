@@ -14,10 +14,10 @@
                         <p>{{ project.location }}</p>
                       </v-card-text>
                       <v-card-text>
-                        <p>{{ project.date }}</p>
-                      </v-card-text>
-                      <v-card-text>
                         <p style="text-align: justify" v-for="description in project.description.split(' -')" :key="description">- {{ description }}</p>
+                      </v-card-text>
+                      <v-card-text v-if="project.embed">
+                      <embed :src="project.embed" style="width:500px; height: 600px;">
                       </v-card-text>
                     </v-col>
                     <v-col cols="12" md="2">
@@ -70,6 +70,7 @@ export default {
                     date: 'Date 1',
                     description: 'Description 1',
                     website: 'https://www.google.com',
+                    embed: "https://lahyra.com"
                 },
                 {
                     id: 2,

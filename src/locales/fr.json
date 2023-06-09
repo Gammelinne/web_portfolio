@@ -86,6 +86,11 @@
                 "Description" : "Installation de tuyaux d'oxygène et d'air médical dans des hôpitaux. - Installation de prises murales d'oxygène et d'air médical dans des hôpitaux. - Installation de centrales d'oxygène et d'air médical dans des hôpitaux.",
                 "Location" : "Mauger Gaz Médicaux - 14460 Colombelles"
             }
+        },
+        "Project" : {
+            "Title": "Projets",
+            "Website": "En savoir plus"
+
         }
     }
 }

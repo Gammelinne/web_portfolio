@@ -51,21 +51,7 @@
             dot-color="primary"
             size="small"
           >
-            <!--hover to see content-->
-            <v-tooltip bottom>
-              <template v-slot:activator="{ on }">
-                <v-btn
-                  v-on="on"
-                  text
-                  size="small"
-                > 
-                <!--En savoir +-->
-                <v-icon>mdi-information</v-icon>
-                {{ experience.title }}
-                </v-btn>
-              </template>
-              <span>{{ $t('App.Experience.description') }}</span>
-            </v-tooltip>
+          
           </v-timeline-item>
           </v-timeline>
         </v-card>

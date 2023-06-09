@@ -46,7 +46,13 @@
             padless
             class="text-center"
           >
-           {{ $t('App.Footer') }}
+           <!--Text to copyright and note the project-->
+            <v-col
+              cols="12"
+            >
+              <span>&copy; {{ new Date().getFullYear() }} - {{ $t('App.Title') }}  </span>
+            </v-col>
+
           </v-footer>
         </template>
       </v-navigation-drawer>
