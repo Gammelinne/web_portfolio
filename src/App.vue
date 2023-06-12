@@ -36,10 +36,12 @@
             v-for="item in items"
             :key="item.title"
             link
+            min-height="66"
             @click="goTo(item.route)"
             :prepend-icon="item.icon"
           >
             <v-list-item-title>{{ item.title }}</v-list-item-title>
+            <v-divider></v-divider>
         </v-list-item>
         <template v-slot:append>
          <v-footer

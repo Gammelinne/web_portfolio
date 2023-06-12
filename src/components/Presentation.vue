@@ -3,18 +3,20 @@
     <v-container>
       <v-row>
         <v-col cols="12" md="4">
-          <v-img class="Avatar mx-auto" src="https://i.ibb.co/4WJD6XR/photo-profile.jpg" width="150" height="150" />
+          <v-img class="Avatar mx-auto" src="../assets/images/photo_profile.jpeg" width="150" height="150" />
         </v-col>
         <v-col cols="12" md="8">
-          <v-card>
+          <v-card elevation="3">
             <v-card-text>
               <h2 class="text-center my-3">
                 {{ $t('App.Presentation.Title') }}</h2>
-              <p style="text-align: justify;">{{ $t('App.Presentation.Description') }} <a href="https://lahyra.com">Lahyra</a></p>
+              <p style="text-align: justify;">{{ $t('App.Presentation.Description') }} <a target="_blank" href="https://lahyra.com">Lahyra</a></p>
             </v-card-text>
             <v-card-actions>
               <v-btn
-                text
+                plain
+                variant="outlined"
+                color="primary"
                 href="https://kylianrenault.lahyra.com/en/assets/Documents/Resume.pdf"
                 target="_blank"
                 >
@@ -22,7 +24,9 @@
                 {{ $t('App.Presentation.Resume') }}
               </v-btn>
               <v-btn
-                text
+                plain
+                variant="outlined"
+                color="primary"
                 href="https://kylianrenault.lahyra.com/en/assets/Documents/Cover%20Letter.pdf"
                 target="_blank"
                 >
@@ -32,14 +36,22 @@
             </v-card-actions>
             <v-card-actions>
               <v-btn
-                text
-                href="https://github.com/Gammelinne">
+                plain
+                variant="outlined"
+                color="primary"
+                href="https://github.com/Gammelinne"
+                target="_blank"
+                >
               <v-icon>mdi-github</v-icon>
                 GitHub
               </v-btn>
               <v-btn
-                text
-                href="https://www.linkedin.com/in/kylian-renault/">
+                plain
+                variant="outlined"
+                color="primary"
+                href="https://www.linkedin.com/in/kylian-renault/"
+                target="_blank"
+                >
               <v-icon>mdi-linkedin</v-icon>
                 LinkedIn
               </v-btn>
@@ -64,6 +76,9 @@
 <script>
 export default {
   name: 'PresentationComponent',
+  components: {
+    
+  },
   data: () => ({
     is_clicked: false,
   }),
@@ -104,7 +119,7 @@ export default {
 
 <style scoped>
 #Presentation {
-  margin-top: calc(20% - 48px);
+  margin-top: calc(15% - 48px);
 }
 .Avatar {
   border-radius: 50%;

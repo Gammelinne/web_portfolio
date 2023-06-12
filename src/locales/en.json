@@ -40,6 +40,264 @@
         "Description": "Mathematics,Physics,English,Spanish,SVT,History,Geography,Philosophy",
         "Location" : "15 Rue Guyon de Guercheville - 14200 Hérouville Saint Clair"
       }
+    },
+    "Experience": {
+      "Title" : "Professional experiences",
+      "Website" : "Learn more",
+      "One" : {
+        "Title" : "Web/Mobile Developer Internship - Qwice",
+        "Date" : "01/2023 - 04/2023",
+        "Website" : "https://qwice.org/",
+        "Description": "- Making an existing web application compatible with native Android/iOS mobile application with the framework Capacitor.js(android studio / xcode). - Adding push notifications to the application (firebase / php). - Adding and correcting features on the frontend (VueJs).",
+        "Location" : "Normandie incubation - 14000 Caen"
+      },
+      "Two" : {
+        "Title" : "Full Stack Developer Internship",
+        "Date" : "04/2022 - 08/2022",
+        "Website": "https://boomerangweb.net/gestion-des-achats-bons-de-commande/",
+        "Description" : "- Creation of a client management interface for server centralization (Laravel + Vue.js + MySQL). - Creation of bash scripts to determine the status of servers (bash). - Unit testing of the most critical functions (PHPUnit + Mockery).",
+        "Location" : "Boomerang Web - 14000 Caen"
+      },
+      "Three": {
+        "Title": "Volunteer Fabmanager Assistant",
+        "Date": "09/2021 - 01/2022",
+        "Website": "https://www.facebook.com/lepavillonorb",
+        "Description": "Basic computer courses (Word, Excel, PowerPoint, Internet, etc.) for beginners. - Use of fablab machines (3D printer, laser cutter, etc.).",
+        "Location": "Sociocultural Center - Ouistreham"
+      },
+      "Four": {
+          "Title": "Restaurant Employee",
+          "Date": "07/2019 - 09/2019",
+          "Website": "https://festyland.com/",
+          "Description": "Preparation of customer orders (in the kitchen). - Customer service. - Cleaning of premises.",
+          "Location": "Festyland - 14652 Carpiquet"
+      },
+      "Five": {
+          "Title": "Laborer",
+          "Date": "06/2020 - 08/2020",
+          "Website": "https://www.maugergazmedicaux.fr/nos-services/vente-de-materiels-dalimentation-gaz-medicaux/",
+          "Description": "Installation of medical oxygen and air pipes in hospitals. - Installation of medical oxygen and air wall outlets in hospitals. - Installation of medical oxygen and air plants in hospitals.",
+          "Location": "Mauger Gaz Médicaux - 14460 Colombelles"
+      },
+      "Six": {
+          "Title": "Laborer",
+          "Date": "08/2018",
+          "Website": "https://www.maugergazmedicaux.fr/nos-services/vente-de-materiels-dalimentation-gaz-medicaux/",
+          "Description": "Installation of medical oxygen and air pipes in hospitals. - Installation of medical oxygen and air wall outlets in hospitals. - Installation of medical oxygen and air plants in hospitals.",
+          "Location": "Mauger Gaz Médicaux - 14460 Colombelles"
+      }
+    },
+    "Project": {
+      "Github": "My contributions on Github",
+      "Title": "My Projects",
+      "Website": "Github",
+      "One": 
+      {
+        "Title": "Lahyra",
+        "Date": "Since September 2023",
+        "Website": "https://github.com/Gammelinne/Lahyra-back-V2",
+        "Description": "Lahyra is my biggest personal project. It was created using VueJS (JavaScript) for the frontend and Laravel for the backend (PHP). It has many features such as JWT (JSON web token) protected authentication, language management with I18n, photo upload with storage, and WebSocket integration with Pusher. By clicking on 'API Routes', you will find a list of all the routes functioning on the site (some of which are protected by administrator scopes).",
+        "Route": "API Routes"
+      },
+      "Two": 
+      {
+        "Title": "Portfolio",
+        "Date": "June 2023",
+        "Website": "https://github.com/Gammelinne/web_portfolio",
+        "Description": "My portfolio is a personal project created using VueJS (JavaScript) with Vuetify. It incorporates libraries such as I18n for translation, Axios for HTTP requests, and Vue Router for navigation. It also features a dark mode system that is stored in the local storage (similar to the language selection)."
+      },
+      "Three": 
+      {
+        "Title": "EasySave",
+        "Date": "December 2022",
+        "Website": "https://github.com/Gammelinne/Easysave",
+        "Description": "EasySave is a file backup software. It was a school project developed by a team of 4 students. I was responsible for the software development, particularly using the MVVM pattern. It was built with: - Visual Studio 2022 (Enterprise version) - Visual Paradigm (for diagrams) - Azure Repos Version 1.0"
+      },
+      "Four": 
+      {
+        "Title": "Discord Bot",
+        "Date": "February 2022",
+        "Website": "https://github.com/Gammelinne/Bot-discord",
+        "Description": "My first Discord bot to learn JavaScript."
+      }
+    },
+    "Routes": {
+      "Title" : "API Routes",
+      "Table":{
+        "Method": "Method",
+        "Endpoint": "Endpoint",
+        "Description": "Description"
+      },
+      "1": {
+        "Method": "GET",
+        "Endpoint": "/laravel-websockets",
+        "Description": "Retrieves information about the Laravel WebSockets."
+      },
+      "2": {
+        "Method": "HEAD",
+        "Endpoint": "/laravel-websockets",
+        "Description": "Retrieves the headers for the Laravel WebSockets."
+      },
+      "3": {
+        "Method": "GET",
+        "Endpoint": "/laravel-websockets/apps",
+        "Description": "Retrieves information about the Laravel WebSockets apps."
+      },
+      "4": {
+        "Method": "HEAD",
+        "Endpoint": "/laravel-websockets/apps",
+        "Description": "Retrieves the headers for the Laravel WebSockets apps."
+      },
+      "5": {
+        "Method": "POST",
+        "Endpoint": "/laravel-websockets/apps",
+        "Description": "Creates a new Laravel WebSockets app."
+      },
+      "6": {
+        "Method": "GET",
+        "Endpoint": "/laravel-websockets/api/{appId}/statistics",
+        "Description": "Retrieves statistics for a specific Laravel WebSockets app."
+      },
+      "7": {
+        "Method": "HEAD",
+        "Endpoint": "/laravel-websockets/api/{appId}/statistics",
+        "Description": "Retrieves the headers for the statistics of a specific Laravel WebSockets app."
+      },
+      "8": {
+        "Method": "POST",
+        "Endpoint": "/laravel-websockets/auth",
+        "Description": "Authenticates using Laravel WebSockets."
+      },
+      "9": {
+        "Method": "POST",
+        "Endpoint": "/laravel-websockets/event",
+        "Description": "Sends an event using Laravel WebSockets."
+      },
+      "10": {
+        "Method": "POST",
+        "Endpoint": "/oauth/token",
+        "Description": "Requests an OAuth token."
+      },
+      "11": {
+        "Method": "GET",
+        "Endpoint": "/oauth/authorize",
+        "Description": "Authorizes an OAuth request."
+      },
+      "12": {
+        "Method": "HEAD",
+        "Endpoint": "/oauth/authorize",
+        "Description": "Retrieves the headers for the OAuth authorization request."
+      },
+      "13": {
+        "Method": "POST",
+        "Endpoint": "/oauth/token/refresh",
+        "Description": "Refreshes an OAuth token."
+      },
+      "14": {
+        "Method": "POST",
+        "Endpoint": "/oauth/authorize",
+        "Description": "Creates an OAuth authorization request."
+      },
+      "15": {
+        "Method": "DELETE",
+        "Endpoint": "/oauth/authorize",
+        "Description": "Deletes an OAuth authorization request."
+      },
+      "16": {
+        "Method": "GET",
+        "Endpoint": "/oauth/tokens",
+        "Description": "Retrieves OAuth tokens."
+      },
+      "17": {
+        "Method": "HEAD",
+        "Endpoint": "/oauth/tokens",
+        "Description": "Retrieves the headers for OAuth tokens."
+      },
+      "18": {
+        "Method": "DELETE",
+        "Endpoint": "/oauth/tokens/{token_id}",
+        "Description": "Deletes a specific OAuth token."
+      },
+      "19": {
+        "Method": "GET",
+        "Endpoint": "/oauth/clients",
+        "Description": "Retrieves OAuth clients."
+      },
+      "20": {
+        "Method": "HEAD",
+        "Endpoint": "/oauth/clients",
+        "Description": "Retrieves the headers for OAuth clients."
+      },
+      "21": {
+        "Method": "POST",
+        "Endpoint": "/oauth/clients",
+        "Description": "Creates an OAuth client."
+      },
+      "22": {
+        "Method": "PUT",
+        "Endpoint": "/oauth/clients/{client_id}",
+        "Description": "Updates an OAuth client."
+      },
+      "23": {
+        "Method": "DELETE",
+        "Endpoint": "/oauth/clients/{client_id}",
+        "Description": "Deletes a specific OAuth client."
+      },
+      "24": {
+        "Method": "GET",
+        "Endpoint": "/oauth/scopes",
+        "Description": "Retrieves OAuth scopes."
+      },
+      "25": {
+        "Method": "HEAD",
+        "Endpoint": "/oauth/scopes",
+        "Description": "Retrieves the headers for OAuth scopes."
+      },
+      "26": {
+        "Method": "GET",
+        "Endpoint": "/oauth/personal-access-tokens",
+        "Description": "Retrieves personal access tokens."
+      },
+      "27": {
+        "Method": "HEAD",
+        "Endpoint": "/oauth/personal-access-tokens",
+        "Description": "Retrieves the headers for personal access tokens."
+      },
+      "28": {
+        "Method": "POST",
+        "Endpoint": "/oauth/personal-access-tokens",
+        "Description": "Creates a personal access token."
+      },
+      "29": {
+        "Method": "DELETE",
+        "Endpoint": "/oauth/personal-access-tokens/{token_id}",
+        "Description": "Deletes a specific personal access token."
+      },
+      "30": {
+        "Method": "GET",
+        "Endpoint": "/broadcasting/auth",
+        "Description": "Retrieves authentication information for broadcasting."
+      },
+      "31": {
+        "Method": "POST",
+        "Endpoint": "/broadcasting/auth",
+        "Description": "Authenticates for broadcasting."
+      },
+      "32": {
+        "Method": "HEAD",
+        "Endpoint": "/broadcasting/auth",
+        "Description": "Retrieves the headers for broadcasting authentication."
+      },
+      "33": {
+        "Method": "POST",
+        "Endpoint": "/api/user",
+        "Description": "Creates a new user in the API."
+      },
+      "34": {
+        "Method": "GET",
+        "Endpoint": "/api/user",
+        "Description": "Retrieves information about a user in the API."
+      }
     }
   }
 }

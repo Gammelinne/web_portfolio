@@ -1,18 +1,18 @@
 <template>
   <div id="Formation">
     <v-container>
-      <v-card >
+      <v-card elevation="2">
         <v-card-text>
           <h1 class="my-5 text-center">{{ $t('App.Formation.Title') }}</h1>
-          <v-card v-for="formation in formations" :key="formation.id" class="my-4">
+          <v-card elevation="4" v-for="formation in formations" :key="formation.id" class="my-5">
             <v-row>
               <v-col cols="12" md="9">
-                <h4 class="mx-5">{{ formation.title }}</h4>
+                <h3 class="mx-4 mt-4">{{ formation.title }}</h3>
                 <v-card-text>
                   <p>{{ formation.location }}</p>
                 </v-card-text>
                 <v-card-text>
-                  <v-chip class="mr-1 mt-1" v-for="description in formation.description.split(',')" :key="description">{{ description }}</v-chip>
+                  <v-chip color="primary" class="mr-1 mt-1" v-for="description in formation.description.split(',')" :key="description">{{ description }}</v-chip>
                 </v-card-text>
               </v-col>
               <v-col cols="12" md="3">
@@ -23,7 +23,7 @@
             </v-row>
             <v-card-actions>
               <v-btn
-              text
+              plain
               :href="formation.website"
               target="_blank"
               >

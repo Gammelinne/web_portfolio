@@ -44,7 +44,7 @@
             "Title": "Experiences professionnelles",
             "Website": "En savoir plus",
             "One" : {
-                "Title" : "Stage developpeur web/mobile",
+                "Title" : "Stage developpeur web/mobile - Qwice",
                 "Date" : "01/2023 - 04/2023",
                 "Website" : "https://qwice.org/",
                 "Description" : "Rendre une application web existante compatible avec une application mobile native Android/iOS avec le framework Capacitor.js (android studio / xcode). - Ajouter des notifications push à l'application (firebase / php). - Ajout et correction de fonctionnalités sur le frontend (VueJs).",
@@ -54,14 +54,14 @@
             "Two": {
                 "Title": "Stage développeur fullstack",
                 "Date": "04/2022 - 08/2022",
-                "Website": "https://boomerangweb.net/gestion-des-achats-bons-de-commande/",
-                "Description": "Création d'une interface gestion clients permettant la centralisation des serveurs (Laravel + Vuejs + MySQL). - Création de scripts bash permettant de connaitre l'état des serveurs (bash). - Tests unitaires des fonctions les plus critiques (PHPUnit + Mockery).",
+              
+  "Website": "https://boomerangweb.net/gestion-des-achats-bons-de-commande/",                "Description": "Création d'une interface gestion clients permettant la centralisation des serveurs (Laravel + Vuejs + MySQL). - Création de scripts bash permettant de connaitre l'état des serveurs (bash). - Tests unitaires des fonctions les plus critiques (PHPUnit + Mockery).",
                 "Location": "Boomerang Web - 14000 Caen"
             },
             "Three": {
                 "Title": "Assistant fabmanager bénévole",
                 "Date": "09/2021 - 01/2022",
-                "Website": "https://www.lesaffreteurs.com/",
+                "Website": "https://www.facebook.com/lepavillonorb",
                 "Description": "Cours d'informatiques basiques (Word, Excel, Powerpoint, Internet, etc.) à des personnes débutantes. - Utilisation des machines du fablab (imprimante 3D, découpeuse laser, etc.).",
                 "Location": "Centre socioculturel - Ouistreham"
             },
@@ -69,7 +69,7 @@
                 "Title": "Employé de restauration",
                 "Date": "07/2019 - 09/2019",
                 "Website": "https://festyland.com/",
-                "Description": "Préparation des commandes. - Service des clients. - Nettoyage des locaux.",
+                "Description": "Préparation des commandes des clients (en cuisine). - Service des clients. - Nettoyage des locaux.",
                 "Location": "Festyland - 14652 Carpiquet"
             },
             "Five": {
@@ -88,9 +88,213 @@
             }
         },
         "Project" : {
-            "Title": "Projets",
-            "Website": "En savoir plus"
-
+            "Github" : "Mes contributions sur Github",
+            "Title": "Mes Projets",
+            "Website": "Github",
+            "One" :{
+                "Title" : "Lahyra",
+                "Date" : "Depuis septembre 2023",
+                "Website" : "https://github.com/Gammelinne/Lahyra-back-V2",
+                "Description" : "Lahyra est mon plus grand projet personnel. Il a été créé en VueJS (javascript) pour le frontend et Laravel pour le backend (PHP). Il y a beaucoup de fonctionnalités comme l'authentification protégée par JWT (JSON web token), la gestion des langues avec I18n, l'ajout de photos avec storage et l'ajout de websocket avec pusher. En cliquant sur 'Route API' vous trouverez le tableau de toutes les routes fonctionnant sur le site (Dont certaines protégées par des scopes administrateur) .",
+                "Route": "Routes API"
+            },
+            "Two" :{
+                "Title" : "Portfolio",
+                "Date" : "Juin 2023",
+                "Website" : "https://github.com/Gammelinne/web_portfolio",
+                "Description": "Mon porfolio est un projet personnel qui a été créé en VueJS (javascript) avec vuetify. Il y a quelques librairie comme I18n pour la traduction, Axios pour les requêtes HTTP et Vue Router pour la navigation. Il y a aussi un système de dark mode qui est sauvegardé dans le local storage (comme pour la langue)."
+            },
+            "Three" :{
+                "Title" : "EasySave",
+                "Date" : "Decembre 2022",
+                "Website" : "https://github.com/Gammelinne/Easysave",
+                "Description": "Easysave est un logiciel de sauvegarde de dossiers. Il s'agit d'un projet scolaire réalisé par une équipe de 4 étudiants. J'ai été en charge du développement du logiciel en particulier avec le pattern MVVM. Il est construit avec : - Visual Studio 2022 (version entreprise) - Visual Pardigm (pour les diagrammes) - Azure Repos Version 1.0"
+            },
+            "Four" :{
+                "Title" : "Bot discord",
+                "Date" : "Février 2022",
+                "Website" : "https://github.com/Gammelinne/Bot-discord",
+                "Description": "Mon premier bot discord afin de pouvoir apprendre le JavaScript."
+            
+            }
+        },
+        "Routes": {
+            "Title": "Routes API",
+            "Table" : {
+                "Method": "Méthode",
+                "Endpoint": "Endpoint",
+                "Description": "Description"
+            },
+            "1": {
+                "Method": "GET",
+                "Endpoint": "/laravel-websockets",
+                "Description": "Récupère des informations sur les Laravel WebSockets."
+            },
+            "2": {
+                "Method": "HEAD",
+                "Endpoint": "/laravel-websockets",
+                "Description": "Récupère les en-têtes des Laravel WebSockets."
+            },
+            "3": {
+                "Method": "GET",
+                "Endpoint": "/laravel-websockets/apps",
+                "Description": "Récupère des informations sur les applications Laravel WebSockets."
+            },
+            "4": {
+                "Method": "HEAD",
+                "Endpoint": "/laravel-websockets/apps",
+                "Description": "Récupère les en-têtes des applications Laravel WebSockets."
+            },
+            "5": {
+                "Method": "POST",
+                "Endpoint": "/laravel-websockets/apps",
+                "Description": "Crée une nouvelle application Laravel WebSockets."
+            },
+            "6": {
+                "Method": "GET",
+                "Endpoint": "/laravel-websockets/api/{appId}/statistics",
+                "Description": "Récupère des statistiques pour une application spécifique Laravel WebSockets."
+            },
+            "7": {
+                "Method": "HEAD",
+                "Endpoint": "/laravel-websockets/api/{appId}/statistics",
+                "Description": "Récupère les en-têtes des statistiques pour une application spécifique Laravel WebSockets."
+            },
+            "8": {
+                "Method": "POST",
+                "Endpoint": "/laravel-websockets/auth",
+                "Description": "Authentification en utilisant Laravel WebSockets."
+            },
+            "9": {
+                "Method": "POST",
+                "Endpoint": "/laravel-websockets/event",
+                "Description": "Envoie un événement en utilisant Laravel WebSockets."
+            },
+            "10": {
+                "Method": "POST",
+                "Endpoint": "/oauth/token",
+                "Description": "Demande un jeton OAuth."
+            },
+            "11": {
+                "Method": "GET",
+                "Endpoint": "/oauth/authorize",
+                "Description": "Autorise une demande OAuth."
+            },
+            "12": {
+                "Method": "HEAD",
+                "Endpoint": "/oauth/authorize",
+                "Description": "Récupère les en-têtes pour la demande d'autorisation OAuth."
+            },
+            "13": {
+                "Method": "POST",
+                "Endpoint": "/oauth/token/refresh",
+                "Description": "Actualise un jeton OAuth."
+            },
+            "14": {
+                "Method": "POST",
+                "Endpoint": "/oauth/authorize",
+                "Description": "Crée une demande d'autorisation OAuth."
+            },
+            "15": {
+                "Method": "DELETE",
+                "Endpoint": "/oauth/authorize",
+                "Description": "Supprime une demande d'autorisation OAuth."
+            },
+            "16": {
+                "Method": "GET",
+                "Endpoint": "/oauth/tokens",
+                "Description": "Récupère des jetons OAuth."
+            },
+            "17": {
+                "Method": "HEAD",
+                "Endpoint": "/oauth/tokens",
+                "Description": "Récupère les en-têtes des jetons OAuth."
+            },
+            "18": {
+                "Method": "DELETE",
+                "Endpoint": "/oauth/tokens/{token_id}",
+                "Description": "Supprime un jeton OAuth spécifique."
+            },
+            "19": {
+                "Method": "GET",
+                "Endpoint": "/oauth/clients",
+                "Description": "Récupère des clients OAuth."
+            },
+            "20": {
+                "Method": "HEAD",
+                "Endpoint": "/oauth/clients",
+                "Description": "Récupère les en-têtes des clients OAuth."
+            },
+            "21": {
+                "Method": "POST",
+                "Endpoint": "/oauth/clients",
+                "Description": "Crée un client OAuth."
+            },
+            "22": {
+                "Method": "PUT",
+                "Endpoint": "/oauth/clients/{client_id}",
+                "Description": "Met à jour un client OAuth."
+            },
+            "23": {
+                "Method": "DELETE",
+                "Endpoint": "/oauth/clients/{client_id}",
+                "Description": "Supprime un client OAuth spécifique."
+            },
+            "24": {
+                "Method": "GET",
+                "Endpoint": "/oauth/scopes",
+                "Description": "Récupère des scopes OAuth."
+            },
+            "25": {
+                "Method": "HEAD",
+                "Endpoint": "/oauth/scopes",
+                "Description": "Récupère les en-têtes des scopes OAuth."
+            },
+            "26": {
+                "Method": "GET",
+                "Endpoint": "/oauth/personal-access-tokens",
+                "Description": "Récupère des jetons d'accès personnels."
+            },
+            "27": {
+                "Method": "HEAD",
+                "Endpoint": "/oauth/personal-access-tokens",
+                "Description": "Récupère les en-têtes des jetons d'accès personnels."
+            },
+            "28": {
+                "Method": "POST",
+                "Endpoint": "/oauth/personal-access-tokens",
+                "Description": "Crée un jeton d'accès personnel."
+            },
+            "29": {
+                "Method": "DELETE",
+                "Endpoint": "/oauth/personal-access-tokens/{token_id}",
+                "Description": "Supprime un jeton d'accès personnel spécifique."
+            },
+            "30": {
+                "Method": "GET",
+                "Endpoint": "/broadcasting/auth",
+                "Description": "Récupère des informations d'authentification pour la diffusion."
+            },
+            "31": {
+                "Method": "POST",
+                "Endpoint": "/broadcasting/auth",
+                "Description": "Authentification pour la diffusion."
+            },
+            "32": {
+                "Method": "HEAD",
+                "Endpoint": "/broadcasting/auth",
+                "Description": "Récupère les en-têtes pour l'authentification de diffusion."
+            },
+            "33": {
+                "Method": "POST",
+                "Endpoint": "/api/user",
+                "Description": "Crée un nouvel utilisateur dans l'API."
+            },
+            "34": {
+                "Method": "GET",
+                "Endpoint": "/api/user",
+                "Description": "Récupère des informations sur un utilisateur dans l'API."
+            }
         }
     }
 }

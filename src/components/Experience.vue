@@ -1,11 +1,9 @@
 <template>
     <div id="Experience">
       <v-container>
-        <v-card>
+        <v-card elevation="3">
           <h1 class="text-center my-5">{{ $t('App.Experience.Title') }}</h1>          
-          <v-timeline
-        v-if="!is_mobile"
-        >
+          <v-timeline v-if="!is_mobile">
           <v-timeline-item
             v-for="experience in Experiences"
             :key="experience.id"
@@ -14,7 +12,7 @@
             size="small"
           >
             <div>
-              <v-card variant="outlined" class="mx-5">
+              <v-card variant="outlined" elevation="5" class="mx-5">
                 <v-card-title>
                   <h4>{{ experience.title }}</h4>
                 </v-card-title>
@@ -51,6 +49,25 @@
             dot-color="primary"
             size="small"
           >
+            <div>
+              <v-card variant="outlined">
+                  <h4 class="mx-5 my-2">{{ experience.title }}</h4>
+                  <h6 class="mx-5 my-1">{{ experience.location }}</h6>
+                  <h6 class="mx-5 my-1">{{ experience.date }}</h6>
+                <v-card-text>
+                  <p style="text-align: justify" v-for="description in experience.description.split(' -')" :key="description">- {{ description }}</p>
+                </v-card-text>
+                <v-card-actions>
+                  <v-btn
+                    v-if="experience.website"
+                    text
+                    :href="experience.website"
+                    target="_blank"
+                  ><v-icon>mdi-web</v-icon> {{ $t('App.Experience.Website') }}
+                  </v-btn>
+                </v-card-actions>
+              </v-card>
+            </div>
           
           </v-timeline-item>
           </v-timeline>
