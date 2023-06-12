@@ -54,8 +54,8 @@
             "Two": {
                 "Title": "Stage développeur fullstack",
                 "Date": "04/2022 - 08/2022",
-              
-  "Website": "https://boomerangweb.net/gestion-des-achats-bons-de-commande/",                "Description": "Création d'une interface gestion clients permettant la centralisation des serveurs (Laravel + Vuejs + MySQL). - Création de scripts bash permettant de connaitre l'état des serveurs (bash). - Tests unitaires des fonctions les plus critiques (PHPUnit + Mockery).",
+                "Website": "https://boomerangweb.net/gestion-des-achats-bons-de-commande/",                
+                "Description": "Création d'une interface gestion clients permettant la centralisation des serveurs (Laravel + Vuejs + MySQL). - Création de scripts bash permettant de connaitre l'état des serveurs (bash). - Tests unitaires des fonctions les plus critiques (PHPUnit + Mockery).",
                 "Location": "Boomerang Web - 14000 Caen"
             },
             "Three": {
@@ -117,6 +117,29 @@
                 "Description": "Mon premier bot discord afin de pouvoir apprendre le JavaScript."
             
             }
+        },
+        "Hobbies" : {
+            "Title" : "Mes passions",
+            "One":{
+                "Title" : "Musique",
+                "Description" : "Je joue de la batterie depuis l’âge de 7 ans et j’ai rejoint un groupe il y a 3 ans. Voici une démo de No Surprise de Radiohead reprise par notre groupe : "
+            },
+            "Two":{
+                "Title" : "Judo / Taïso",
+                "Description" : " Je pratique le judo depuis l’âge de 7 ans et je suis actuellement ceinture marron. Je suis très attaché et investi dans mon club, et je participe à tous les événements comme l’arbitrage ou et je participe à tous les événements comme l’arbitrage ou le téléthon comme pour le téléthon comme sur la photo ci-dessous du téléthon 2021."
+            }
+        },
+        "Contact":{
+            "Title" : "Me contacter",
+            "Description" : "Si vous souhaitez me contacter, vous pouvez le faire via le formulaire ci-dessous : ",
+            "Name" : "Nom",
+            "Email" : "Email",
+            "Message" : "Message",
+            "Submit" : "Envoyer",
+            "success" : "Votre message a bien été envoyé !",
+            "GeneralError" : "Veuillez remplir tous les champs.",
+            "EmailError" : "Veuillez entrer une adresse email valide.",
+            "CriticError": "Une erreur de mon côté est survenue, veuillez réessayer plus tard."
         },
         "Routes": {
             "Title": "Routes API",

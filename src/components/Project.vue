@@ -15,7 +15,7 @@
               </v-tabs>
             </v-col>
             <v-col cols="12" md="12" v-for="(project) in Projects" :key="project.id">
-              <v-card elevation="5" variant="outlined" v-if="activeTabIndex === project.tabIndex">
+              <v-card elevation="5" v-if="activeTabIndex === project.tabIndex">
                 <v-card-title>{{ project.title }}</v-card-title>
                 <v-card-subtitle class="mx-5">{{ project.date }}</v-card-subtitle>
                 <v-card-text>

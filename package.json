@@ -9,6 +9,7 @@
     "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/locales/**/*.json\""
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@mdi/font": "5.9.55",
     "axios": "^1.4.0",
     "core-js": "^3.8.3",
@@ -19,6 +20,7 @@
     "vue-i18n": "^9.1.0",
     "vue-loader": "^17.2.2",
     "vue-router": "^4.0.3",
+    "vue3-wave-audio-player": "^2.0.3",
     "vuetify": "^3.0.0-beta.0",
     "webfontloader": "^1.0.0"
   },

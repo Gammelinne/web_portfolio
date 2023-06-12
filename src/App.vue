@@ -62,6 +62,34 @@
     <v-main>
       <router-view/>
     </v-main>
+
+    <v-footer
+      padless
+      class="text-center"
+    >
+    <!--github and linkedin btn + copyright at the line-->
+      <v-col
+        cols="12"
+      >
+        <v-btn
+          class="mx-2"
+          href="https://github.com/Gammelinne/"
+          target="_blank"
+        >
+          <v-icon>mdi-github</v-icon>
+          GitHub
+        </v-btn>
+        <v-btn
+        class="mx-2"
+          href="https://www.linkedin.com/in/kylian-renault/"
+          target="_blank"
+        >
+          <v-icon>mdi-linkedin</v-icon>
+          LinkedIn
+        </v-btn>
+        <span>&copy; {{ new Date().getFullYear() }} - {{ $t('App.Title') }}  </span>
+      </v-col>
+    </v-footer>
   </v-app>
 </template>
 
@@ -81,16 +109,19 @@ export default {
     //get data from local storage
     this.language = localStorage.getItem('language') || navigator.language.slice(0, 2) || 'en'; 
     this.is_light = localStorage.getItem('is_light') == 'true' ? true : false;
-    this.items = [
-      { title: this.$t('App.Presentation.FirstTitle'), icon: 'mdi-home', route: '#App' },
-      { title: this.$t('App.Formation.Title'), icon: 'mdi-school', route: '#Formation' },
-      { title: this.$t('App.Experience.Title'), icon: 'mdi-briefcase', route: '#Experience' },
-      { title: this.$t('App.Project.Title'), icon: 'mdi-rocket', route: '#Project' },
-      { title: this.$t('App.Hobbies.Title'), icon: 'mdi-gamepad-variant', route: '#Hobbie' },
-      { title: this.$t('App.Contact.Title'), icon: 'mdi-email', route: '#Contact' },
-    ]
+    this.updateItems();
   },
   methods: {
+    updateItems() {
+      this.items = [
+        { title: this.$t('App.Presentation.FirstTitle'), icon: 'mdi-home', route: '#App' },
+        { title: this.$t('App.Formation.Title'), icon: 'mdi-school', route: '#Formation' },
+        { title: this.$t('App.Experience.Title'), icon: 'mdi-briefcase', route: '#Experience' },
+        { title: this.$t('App.Project.Title'), icon: 'mdi-rocket', route: '#Project' },
+        { title: this.$t('App.Hobbies.Title'), icon: 'mdi-gamepad-variant', route: '#Hobbie' },
+        { title: this.$t('App.Contact.Title'), icon: 'mdi-email', route: '#Contact' },
+      ]
+    },
     changeLanguage() {
       this.language = this.language === 'en' ? 'fr' : 'en';
       localStorage.setItem('language', this.language);
@@ -108,6 +139,9 @@ export default {
     is_light() {
       localStorage.setItem('is_light', this.is_light);
     },
+    '$i18n.locale': function() {
+        this.updateItems();
+      }
   }
 }
 </script>

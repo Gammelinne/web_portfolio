@@ -121,6 +121,29 @@
         "Description": "My first Discord bot to learn JavaScript."
       }
     },
+    "Hobbies": {
+      "Title": "My Hobbies",
+      "One": {
+          "Title": "Music",
+          "Description": "I have been playing the drums since the age of 7 and joined a band 3 years ago. Here's a demo of our band covering Radiohead's 'No Surprise': "
+      },
+      "Two": {
+          "Title": "Judo / Taïso",
+          "Description": "I have been practicing judo since the age of 7 and currently hold a brown belt. I am deeply committed to my club and participate in various events such as refereeing or the telethon, as shown in the photo below from the 2021 telethon."
+      }
+  },
+  "Contact": {
+      "Title": "Contact Me",
+      "Description": "If you wish to contact me, you can do so using the form below:",
+      "Name": "Name",
+      "Email": "Email",
+      "Message": "Message",
+      "Submit": "Submit",
+      "success": "Your message has been successfully sent!",
+      "GeneralError": "Please fill in all the fields.",
+      "EmailError": "Please enter a valid email address.",
+      "CriticError": "An error occurred on my side, please try again later."
+  },
     "Routes": {
       "Title" : "API Routes",
       "Table":{
