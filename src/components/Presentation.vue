@@ -17,7 +17,7 @@
                 plain
                 variant="outlined"
                 color="primary"
-                href="https://kylianrenault.lahyra.com/en/assets/Documents/Resume.pdf"
+                href="https://kylianrenault.lahyra.com/assets/Resume.pdf"
                 target="_blank"
                 >
               <v-icon>mdi-file-pdf</v-icon>
@@ -27,7 +27,7 @@
                 plain
                 variant="outlined"
                 color="primary"
-                href="https://kylianrenault.lahyra.com/en/assets/Documents/Cover%20Letter.pdf"
+                href="https://kylianrenault.lahyra.com/assets/coverletter.pdf"
                 target="_blank"
                 >
               <v-icon>mdi-file-pdf</v-icon>

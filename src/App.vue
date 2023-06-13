@@ -4,7 +4,7 @@
   :theme="is_light ? 'light' : 'dark'">
     <v-app-bar app 
     >
-    <h3 @click="$router.push('/')" class="Title mx-5">{{$t('App.Title')}}</h3>
+    <h3 @click="goTo('#App')" class="Title mx-5">{{$t('App.Title')}}</h3>
       <v-spacer></v-spacer>
 
       <v-btn
