@@ -90,7 +90,8 @@
     "Project": {
       "Github": "My contributions on Github",
       "Title": "My Projects",
-      "Description": "See description",
+      "Show": "See description",
+      "Hide": "Hide description",
       "Website": "Github",
       "One": 
       {
@@ -150,6 +151,7 @@
       "EmailError": "Please enter a valid email address.",
       "CriticError": "An error occurred on my side, please try again later.",
       "Info":{
+        "Title": "My informations",
         "Birthday": "14 August 2001"
       }
   },

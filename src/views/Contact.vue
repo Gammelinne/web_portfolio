@@ -8,7 +8,8 @@
         </v-card-text>
         <!-- My info -->
         <v-card-text>
-          <v-row>
+          <v-divider></v-divider>
+          <v-row class="text-center my-3">
             <v-col cols="12" sm="6" md="4">
               <v-icon>mdi-calendar</v-icon> {{ $t('App.Contact.Info.Birthday') }}
             </v-col>
@@ -24,13 +25,13 @@
             <v-col cols="12" sm="6" md="4">
               <v-icon>mdi-map-marker</v-icon> Lion-sur-Mer, 14780
             </v-col>
-            <div class="mx-auto">
-              <iframe id="carte"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41624.24299025205!2d-0.3912734240934056!3d49.304526416147226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480a60bc310b6491%3A0x40c14484fbce920!2s14780%20Lion-sur-Mer!5e0!3m2!1sfr!2sfr!4v1641805751570!5m2!1sfr!2sfr"
-                width="500" height="350" style="border:0;" allowfullscreen=""
-                loading="lazy"></iframe>
+            <v-col cols="12" sm="6" md="4">
+              <v-icon>mdi-earth</v-icon> France
+            </v-col>
+            <div class="mx-auto my-3">
             </div>
           </v-row>
+          <v-divider></v-divider>
         </v-card-text>
         <!-- Contact form -->
         <v-form @submit.prevent="sendEmail">

@@ -67,6 +67,7 @@
       <span>&copy; {{ new Date().getFullYear() }} - {{ $t('App.Title') }}  </span>
       <v-spacer></v-spacer>
       <v-btn
+        class="mx-1"
         icon
         href="https://www.github.com/gammelinne"
         target="_blank"
@@ -74,6 +75,7 @@
         <v-icon>mdi-github</v-icon>
       </v-btn>
       <v-btn
+        class="mx-1"
         icon
         href="https://www.linkedin.com/in/kylian-renault/"
         target="_blank"

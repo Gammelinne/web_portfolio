@@ -27,7 +27,7 @@
                       @click="show = !show"
                     >
                   <v-icon class="mx-2"> {{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                  {{ $t('App.Project.Description') }}
+                  {{ show ? $t('App.Project.Hide') : $t('App.Project.Show') }}
                   </v-btn>
                   <v-expand-transition>
                   <div v-show="show">
@@ -37,9 +37,9 @@
                     </v-card-text>
                   </div>
                 </v-expand-transition>
-                <v-card-text v-if="project.embed && !is_mobile" class="text-center my-5">
+                <!--<v-card-text v-if="project.embed && !is_mobile" class="text-center my-5">
                   <embed :src="project.embed" style="width:500px; height: 600px;">
-                </v-card-text>
+                </v-card-text>-->
                 <v-card-text v-if="project.images">
                   <v-img max-height="400" class="my-2" v-for="image in project.images" :key="image" :src="image" :alt="project.title"></v-img>
                 </v-card-text>
@@ -140,6 +140,7 @@ export default {
           description: this.$t('App.Project.One.Description'),
           route: this.$t('App.Project.One.Route'),
           tab: this.$t('App.Project.One.Title'),
+          images: [require('../assets/images/Lahyra/lahyrascreen.png')],
           tabIndex: 0,
           skills : this.$t('App.Project.One.Skills'),
         },

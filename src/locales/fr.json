@@ -92,7 +92,8 @@
             "Github" : "Mes contributions sur Github",
             "Title": "Mes Projets",
             "Website": "Github",
-            "Description": "Voir description",
+            "Show": "Voir description",
+            "Hide": "Cacher description",
             "One" :{
                 "Title" : "Lahyra",
                 "Embed": "https://lahyra.com",
@@ -147,6 +148,7 @@
             "EmailError" : "Veuillez entrer une adresse email valide.",
             "CriticError": "Une erreur de mon côté est survenue, veuillez réessayer plus tard.",
             "Info":{
+                "Title": "Mes coordonnées",
                 "Birthday": "14 Aout 2001"
               }
         },
