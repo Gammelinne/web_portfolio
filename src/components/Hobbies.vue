@@ -6,7 +6,7 @@
           <v-card-text>
             <v-row>
               <v-col cols="12" md="6" v-for="hobbie in Hobbies" :key="hobbie.id">
-                <v-card elevation="5">
+                <v-card variant="outlined" elevation="5">
                   <h1 class="mx-5 my-5 text-center">{{ hobbie.title }}</h1>     
                   <v-card-text>
                     <p style="text-align: justify">{{ hobbie.description }}</p>
@@ -25,6 +25,17 @@
               </v-col>
             </v-row>
           </v-card-text>
+          <div class="text-center">
+          <v-btn
+            text
+            to="/contact"
+            color="primary"
+            class="my-5"
+          >
+          <v-icon>mdi-email</v-icon>
+            {{ $t('App.Contact.Title') }}
+          </v-btn>
+        </div>
         </v-card>
       </v-container>
     </div>

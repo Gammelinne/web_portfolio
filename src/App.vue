@@ -4,7 +4,7 @@
   :theme="is_light ? 'light' : 'dark'">
     <v-app-bar app 
     >
-    <h3 class="mx-5">{{$t('App.Title')}}</h3>
+    <h3 @click="$router.push('/')" class="mx-5">{{$t('App.Title')}}</h3>
       <v-spacer></v-spacer>
 
       <v-btn
@@ -63,32 +63,8 @@
       <router-view/>
     </v-main>
 
-    <v-footer
-      padless
-      class="text-center"
-    >
-    <!--github and linkedin btn + copyright at the line-->
-      <v-col
-        cols="12"
-      >
-        <v-btn
-          class="mx-2"
-          href="https://github.com/Gammelinne/"
-          target="_blank"
-        >
-          <v-icon>mdi-github</v-icon>
-          GitHub
-        </v-btn>
-        <v-btn
-        class="mx-2"
-          href="https://www.linkedin.com/in/kylian-renault/"
-          target="_blank"
-        >
-          <v-icon>mdi-linkedin</v-icon>
-          LinkedIn
-        </v-btn>
-        <span>&copy; {{ new Date().getFullYear() }} - {{ $t('App.Title') }}  </span>
-      </v-col>
+    <v-footer padless class="text-center">
+      <span style="width: 75%;">&copy; {{ new Date().getFullYear() }} - {{ $t('App.Title') }}  </span>
     </v-footer>
   </v-app>
 </template>
@@ -127,17 +103,27 @@ export default {
       localStorage.setItem('language', this.language);
       this.$i18n.locale = this.language;
     },
-    goTo(route) {
-      window.scroll({
-        behavior: 'smooth',
-        left: 0,
-        top: document.querySelector(route).offsetTop
-      });
+    async goTo(route) {
+      //si on est sur la page d'accueil
+      if(this.$route.path === '/' && route !== '#Contact'){
+        window.scroll({
+          behavior: 'smooth',
+          left: 0,
+          top: document.querySelector(route).offsetTop
+        });
+      } else
+        if(route === '#Contact'){
+          this.$router.push('/contact');
+        } else {
+          this.$router.push({ path: '/', query: { route: route } });
+        }
     }
   },
   watch: {
     is_light() {
       localStorage.setItem('is_light', this.is_light);
+      //create global variable for dark mode
+      this.$vuetify.theme.dark = !this.is_light;
     },
     '$i18n.locale': function() {
         this.updateItems();

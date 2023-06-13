@@ -4,7 +4,9 @@
       <v-card elevation="2">
         <v-card-text>
           <h1 class="my-5 text-center">{{ $t('App.Formation.Title') }}</h1>
-          <v-card elevation="4" v-for="formation in formations" :key="formation.id" class="my-5">
+          <v-card 
+          variant="outlined"
+          elevation="4" v-for="formation in formations" :key="formation.id" class="my-5">
             <v-row>
               <v-col cols="12" md="9">
                 <h3 class="mx-4 mt-4">{{ formation.title }}</h3>
@@ -42,7 +44,7 @@
 export default {
   name: 'FormationComponent',
   data: () => ({
-    formations: []
+    formations: [],
   }),
   watch: {
     '$i18n.locale': {
@@ -50,7 +52,7 @@ export default {
         this.updateFormations();
       },
       deep: true
-    }
+    },
   },
   created: function(){
     this.updateFormations();

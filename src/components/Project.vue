@@ -15,14 +15,14 @@
               </v-tabs>
             </v-col>
             <v-col cols="12" md="12" v-for="(project) in Projects" :key="project.id">
-              <v-card elevation="5" v-if="activeTabIndex === project.tabIndex">
+              <v-card variant="outlined" elevation="5" v-if="activeTabIndex === project.tabIndex">
                 <v-card-title>{{ project.title }}</v-card-title>
                 <v-card-subtitle class="mx-5">{{ project.date }}</v-card-subtitle>
                 <v-card-text>
                   <p>{{ project.location }}</p>
                 </v-card-text>
                 <v-card-text>
-                  <p style="text-align: justify" v-for="description in project.description.split(' -')" :key="description">- {{ description }}</p>
+                  <p class="my-2" style="text-align: justify" v-for="description in project.description.split(' -')" :key="description">{{ description }}</p>
                 </v-card-text>
                 <v-card-text v-if="project.embed">
                   <embed :src="project.embed" style="width:500px; height: 600px;">

@@ -56,6 +56,17 @@
                 LinkedIn
               </v-btn>
             </v-card-actions>
+            <v-card-actions>
+             <v-btn
+                text
+                to="/contact"
+                color="primary"
+                class="my-5"
+              >
+              <v-icon class="mx-1">mdi-email</v-icon>
+                {{ $t('App.Contact.Title') }}
+              </v-btn>
+            </v-card-actions>
           </v-card>
         </v-col>
       </v-row>
@@ -133,7 +144,7 @@ export default {
 .ScrollButton {
   position: relative;
   z-index: 1;
-  margin-top: 20%;
+  margin-top: 10%;
   transform: translateX(-50%);
   cursor: pointer;
   /* animation bouton floating */
