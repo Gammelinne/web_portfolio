@@ -13,9 +13,15 @@
           >
             <div>
               <v-card variant="outlined" elevation="5" class="mx-5">
-                <v-card-title>
-                  <h4>{{ experience.title }}</h4>
-                </v-card-title>
+                  <h2 class="my-5 mx-3">{{ experience.title }}</h2>      
+                <v-img
+                class="mx-5 my-2"
+                :src="experience.logo"
+                :alt="experience.title"
+                max-width="75"
+                max-height="75"
+              >
+              </v-img>
                 <v-card-subtitle>
                   <h4>{{ experience.location }}</h4>
                 </v-card-subtitle>
@@ -50,8 +56,16 @@
             size="small"
           >
             <div>
-              <v-card variant="outlined">
-                  <h4 class="mx-5 my-2">{{ experience.title }}</h4>
+              <v-card variant="outlined" class="mx-2">
+                  <h2 class="my-2 mx-2">{{ experience.title }}</h2>
+                  <v-img
+                    class="mx-5 my-2"
+                    :src="experience.logo"
+                    :alt="experience.title"
+                    max-width="75"
+                    max-height="75"
+                  >
+                  </v-img>
                   <h6 class="mx-5 my-1">{{ experience.location }}</h6>
                   <h6 class="mx-5 my-1">{{ experience.date }}</h6>
                 <v-card-text>
@@ -94,10 +108,10 @@
     },
     created: function(){
       this.updateExperiences();
-      this.is_mobile = window.innerWidth < 850;
+      this.is_mobile = window.innerWidth < 900;
       //create listener to update is_mobile
       window.addEventListener('resize', () => {
-        this.is_mobile = window.innerWidth < 850;
+        this.is_mobile = window.innerWidth < 900;
       });
     },
     methods: {
@@ -110,7 +124,7 @@
           website: this.$t('App.Experience.One.Website'),
           date: this.$t('App.Experience.One.Date'),
           description: this.$t('App.Experience.One.Description'),
-          image: this.$t('App.Experience.One.Image'),
+          logo: require('../assets/images/logo/Qwice.jpeg'),
         },
         {
           id: 2,
@@ -119,6 +133,7 @@
           website: this.$t('App.Experience.Two.Website'),
           date: this.$t('App.Experience.Two.Date'),
           description: this.$t('App.Experience.Two.Description'),
+          logo: require('../assets/images/logo/Tdclic.jpeg'),
         },
         {
           id: 3,
@@ -127,6 +142,7 @@
           website: this.$t('App.Experience.Three.Website'),
           date: this.$t('App.Experience.Three.Date'),
           description: this.$t('App.Experience.Three.Description'),
+          logo: require('../assets/images/logo/pavillon.jpeg'),
         },
         {
           id: 4,
@@ -135,6 +151,7 @@
           website: this.$t('App.Experience.Four.Website'),
           date: this.$t('App.Experience.Four.Date'),
           description: this.$t('App.Experience.Four.Description'),
+          logo: require('../assets/images/logo/logo-festyland.png'),
         },
         {
           id: 5,
@@ -143,6 +160,7 @@
           website: this.$t('App.Experience.Five.Website'),
           date: this.$t('App.Experience.Five.Date'),
           description: this.$t('App.Experience.Five.Description'),
+          logo: require('../assets/images/logo/mgm.png'),
         },
         {
           id: 6,
@@ -151,6 +169,7 @@
           website: this.$t('App.Experience.Six.Website'),
           date: this.$t('App.Experience.Six.Date'),
           description: this.$t('App.Experience.Six.Description'),
+          logo: require('../assets/images/logo/mgm.png'),
         },
       ]
       }

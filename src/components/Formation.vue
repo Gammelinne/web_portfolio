@@ -8,19 +8,25 @@
           variant="outlined"
           elevation="4" v-for="formation in formations" :key="formation.id" class="my-5">
             <v-row>
-              <v-col cols="12" md="9">
-                <h3 class="mx-4 mt-4">{{ formation.title }}</h3>
+              <v-col cols="12" md="12">
+                <h3 class="mx-4 mt-4">{{ formation.title }}</h3>              
+                <v-img
+                class="mx-4 my-2"
+                  :src="formation.logo"
+                  :alt="formation.title"
+                  max-width="75"
+                  max-height="75"
+                >
+                </v-img>
+                <v-card-text>
+                  <h5>{{ formation.date }}</h5>
+                </v-card-text>
                 <v-card-text>
                   <p>{{ formation.location }}</p>
                 </v-card-text>
                 <v-card-text>
                   <v-chip color="primary" class="mr-1 mt-1" v-for="description in formation.description.split(',')" :key="description">{{ description }}</v-chip>
                 </v-card-text>
-              </v-col>
-              <v-col cols="12" md="3">
-                <v-card-title>
-                  <h6>{{ formation.date }}</h6>
-                </v-card-title>
               </v-col>
             </v-row>
             <v-card-actions>
@@ -67,6 +73,7 @@ export default {
         website: this.$t('App.Formation.One.Website'),
         date: this.$t('App.Formation.One.Date'),
         description: this.$t('App.Formation.One.Description'),
+        logo: require('../assets/images/logo/logocesi.jpg')
       },
       {
         id: 2,
@@ -75,6 +82,7 @@ export default {
         website: this.$t('App.Formation.Two.Website'),
         date: this.$t('App.Formation.Two.Date'),
         description: this.$t('App.Formation.Two.Description'),
+        logo: require('../assets/images/logo/logocesi.jpg')
       },
       {
         id: 3,
@@ -83,6 +91,7 @@ export default {
         website: this.$t('App.Formation.Three.Website'),
         date: this.$t('App.Formation.Three.Date'),
         description: this.$t('App.Formation.Three.Description'),
+        logo: require('../assets/images/logo/Normandieuniversite.jpeg')
       },
       {
         id: 4,

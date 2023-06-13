@@ -26,7 +26,6 @@ export default defineComponent({
   mounted() {
     //get if there is a query in the route
     const query = this.$route.query;
-    console.log(query);
     window.scroll({
       behavior: 'smooth',
       left: 0,

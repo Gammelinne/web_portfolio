@@ -4,7 +4,7 @@
   :theme="is_light ? 'light' : 'dark'">
     <v-app-bar app 
     >
-    <h3 @click="$router.push('/')" class="mx-5">{{$t('App.Title')}}</h3>
+    <h3 @click="$router.push('/')" class="Title mx-5">{{$t('App.Title')}}</h3>
       <v-spacer></v-spacer>
 
       <v-btn
@@ -63,8 +63,23 @@
       <router-view/>
     </v-main>
 
-    <v-footer padless class="text-center">
-      <span style="width: 75%;">&copy; {{ new Date().getFullYear() }} - {{ $t('App.Title') }}  </span>
+    <v-footer padless>
+      <span>&copy; {{ new Date().getFullYear() }} - {{ $t('App.Title') }}  </span>
+      <v-spacer></v-spacer>
+      <v-btn
+        icon
+        href="https://www.github.com/gammelinne"
+        target="_blank"
+        >
+        <v-icon>mdi-github</v-icon>
+      </v-btn>
+      <v-btn
+        icon
+        href="https://www.linkedin.com/in/kylian-renault/"
+        target="_blank"
+        >
+        <v-icon>mdi-linkedin</v-icon>
+      </v-btn>
     </v-footer>
   </v-app>
 </template>
@@ -133,4 +148,7 @@ export default {
 </script>
 
 <style>
+  .Title {
+    cursor: pointer;
+  }
 </style>

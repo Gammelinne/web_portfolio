@@ -17,18 +17,31 @@
             <v-col cols="12" md="12" v-for="(project) in Projects" :key="project.id">
               <v-card variant="outlined" elevation="5" v-if="activeTabIndex === project.tabIndex">
                 <v-card-title>{{ project.title }}</v-card-title>
-                <v-card-subtitle class="mx-5">{{ project.date }}</v-card-subtitle>
+                <v-card-subtitle>{{ project.date }}</v-card-subtitle>
                 <v-card-text>
-                  <p>{{ project.location }}</p>
+                  <v-chip color="primary" class="mr-1 mt-1" v-for="skill in project.skills.split(',')" :key="skill">{{ skill }}</v-chip>
                 </v-card-text>
-                <v-card-text>
-                  <p class="my-2" style="text-align: justify" v-for="description in project.description.split(' -')" :key="description">{{ description }}</p>
-                </v-card-text>
-                <v-card-text v-if="project.embed">
+                <v-btn
+                      variant="plain"
+                      block
+                      @click="show = !show"
+                    >
+                  <v-icon class="mx-2"> {{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                  {{ $t('App.Project.Description') }}
+                  </v-btn>
+                  <v-expand-transition>
+                  <div v-show="show">
+                    <v-divider></v-divider>
+                    <v-card-text>
+                      <p class="my-2" style="text-align: justify" v-for="description in project.description.split(' -')" :key="description">{{ description }}</p>
+                    </v-card-text>
+                  </div>
+                </v-expand-transition>
+                <v-card-text v-if="project.embed && !is_mobile" class="text-center my-5">
                   <embed :src="project.embed" style="width:500px; height: 600px;">
                 </v-card-text>
                 <v-card-text v-if="project.images">
-                  <v-img class="my-2" v-for="image in project.images" :key="image" :src="image" :alt="project.title"></v-img>
+                  <v-img max-height="400" class="my-2" v-for="image in project.images" :key="image" :src="image" :alt="project.title"></v-img>
                 </v-card-text>
                 <v-card-actions>
                   <v-btn
@@ -79,6 +92,8 @@ export default {
       dialog: false,
       activeTabIndex: 0,
       tabs: [],
+      show: false,
+      is_mobile: false,
     };
   },
   mounted() {
@@ -88,6 +103,11 @@ export default {
       //print toasts of vuetify
       this.error = error;
     }
+    this.is_mobile = window.innerWidth < 600;
+    //create listener to update is_mobile
+    window.addEventListener('resize', () => {
+      this.is_mobile = window.innerWidth < 600;
+    });
     this.updateProjects();
     this.updateTabsTitle();
   },
@@ -115,13 +135,13 @@ export default {
           id: 1,
           title: this.$t('App.Project.One.Title'),
           date: this.$t('App.Project.One.Date'),
+          embed : this.$t('App.Project.One.Embed'),
           website: this.$t('App.Project.One.Website'),
           description: this.$t('App.Project.One.Description'),
           route: this.$t('App.Project.One.Route'),
-          github: this.$t('App.Project.One.Github'),
-          images: [require('../assets/images/Lahyra/lahyrascreen.png')],
           tab: this.$t('App.Project.One.Title'),
           tabIndex: 0,
+          skills : this.$t('App.Project.One.Skills'),
         },
         {
           id: 2,
@@ -129,9 +149,10 @@ export default {
           date: this.$t('App.Project.Two.Date'),
           website: this.$t('App.Project.Two.Website'),
           description: this.$t('App.Project.Two.Description'),
-          github: this.$t('App.Project.Two.Github'),
           tab: this.$t('App.Project.Two.Title'),
+          images: [require('../assets/images/Portfolio/portfolio.png')],
           tabIndex: 1,
+          skills : this.$t('App.Project.Two.Skills'),
         },
         {
           id: 3,
@@ -139,9 +160,10 @@ export default {
           date: this.$t('App.Project.Three.Date'),
           website: this.$t('App.Project.Three.Website'),
           description: this.$t('App.Project.Three.Description'),
-          github: this.$t('App.Project.Three.Github'),
           tab: this.$t('App.Project.Three.Title'),
           tabIndex: 2,
+          skills : this.$t('App.Project.Three.Skills'),
+          images: [require('../assets/images/EasySave/easysave.png'), require('../assets/images/EasySave/easysave2.png'), require('../assets/images/EasySave/easysave3.png')],
         },
         {
           id: 4,
@@ -149,7 +171,6 @@ export default {
           date: this.$t('App.Project.Four.Date'),
           website: this.$t('App.Project.Four.Website'),
           description: this.$t('App.Project.Four.Description'),
-          github: this.$t('App.Project.Four.Github'),
           tab: this.$t('App.Project.Four.Title'),
           tabIndex: 3,
         },

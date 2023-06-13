@@ -48,14 +48,14 @@
         "Title" : "Web/Mobile Developer Internship - Qwice",
         "Date" : "01/2023 - 04/2023",
         "Website" : "https://qwice.org/",
-        "Description": "- Making an existing web application compatible with native Android/iOS mobile application with the framework Capacitor.js(android studio / xcode). - Adding push notifications to the application (firebase / php). - Adding and correcting features on the frontend (VueJs).",
+        "Description": "Making an existing web application compatible with native Android/iOS mobile application with the framework Capacitor.js(android studio / xcode). - Adding push notifications to the application (firebase / php). - Adding and correcting features on the frontend (VueJs).",
         "Location" : "Normandie incubation - 14000 Caen"
       },
       "Two" : {
         "Title" : "Full Stack Developer Internship",
         "Date" : "04/2022 - 08/2022",
         "Website": "https://boomerangweb.net/gestion-des-achats-bons-de-commande/",
-        "Description" : "- Creation of a client management interface for server centralization (Laravel + Vue.js + MySQL). - Creation of bash scripts to determine the status of servers (bash). - Unit testing of the most critical functions (PHPUnit + Mockery).",
+        "Description" : "Creation of a client management interface for server centralization (Laravel + Vue.js + MySQL). - Creation of bash scripts to determine the status of servers (bash). - Unit testing of the most critical functions (PHPUnit + Mockery).",
         "Location" : "Boomerang Web - 14000 Caen"
       },
       "Three": {
@@ -90,6 +90,7 @@
     "Project": {
       "Github": "My contributions on Github",
       "Title": "My Projects",
+      "Description": "See description",
       "Website": "Github",
       "One": 
       {
@@ -97,35 +98,40 @@
         "Date": "Since September 2023",
         "Website": "https://github.com/Gammelinne/Lahyra-back-V2",
         "Description": "Lahyra is my most significant personal project. It was built using VueJS (JavaScript) for the frontend and Laravel for the backend (PHP). This project encompasses a wide range of advanced features that make it robust and secure. - First and foremost, let's delve into the JWT (JSON Web Token) protected authentication. JWT is a highly popular authentication mechanism utilized in modern web applications. The primary advantage of JWT is its ability to maintain authentication state on the client side, eliminating the need for the server to store authentication state for each user. Instead, when a user successfully logs in, they receive a JWT token containing encoded credential information. This token is then included in every subsequent request sent to the server, enabling the server to authenticate and authorize the user for each request. - Moving on to language management with I18n, Lahyra has the capability to support multiple languages. This is a crucial feature for applications targeting an international audience as it allows users to select their preferred language. With this functionality, texts and messages displayed to the user can be easily and dynamically translated, providing a more personalized experience. - Another important feature of Lahyra is the ability to upload and store photos. Users can upload images to the site, which are then securely stored on a server or an appropriate storage service. This feature offers a convenient solution for users who want to share photos or images as part of their Lahyra experience. - Additionally, Lahyra integrates WebSocket with Pusher. WebSocket is a bidirectional communication protocol that enables real-time communication between the client and the server. By leveraging WebSocket in Lahyra, instant and real-time updates can be achieved without the need to refresh the page. This results in a more responsive user experience, especially for features that require real-time updates, such as notifications or live conversations. - Furthermore, by clicking on 'API Routes', users can access a comprehensive list of all the routes functioning on the site. Some of these routes are protected by administrator privileges, meaning they can only be accessed by users with administrative rights. This security measure ensures that certain sensitive or restricted features can only be utilized by authorized users, thereby enhancing the overall security of the application.",
-        "Route": "API Routes"
+        "Route": "API Routes",
+        "Embed": "https:lahyra.com",
+        "Skills": "Laravel 10,Vuejs 3,Vuetify,Websocket,PHP 8.2,JWT,Pusher,I18n,Passport,Axios,LocalStorage,Git"
       },
       "Two": 
       {
         "Title": "Portfolio",
         "Date": "June 2023",
         "Website": "https://github.com/Gammelinne/web_portfolio",
-        "Description": "My portfolio is a personal project created using VueJS (JavaScript) with Vuetify. VueJS is a popular JavaScript framework for building user interfaces, and Vuetify is a UI component library that provides ready-to-use components following the Material Design guidelines. Together, VueJS and Vuetify offer a powerful combination for developing visually appealing and interactive web applications. - To enhance the functionality of the portfolio, various libraries have been incorporated. One of them is I18n, which stands for Internationalization. I18n allows for easy translation and localization of the portfolio into multiple languages. This feature is crucial for reaching a broader audience and providing a personalized experience to users who prefer different languages. - For handling HTTP requests, the portfolio utilizes Axios, a widely used JavaScript library. Axios simplifies the process of making asynchronous HTTP requests, such as retrieving data from APIs or sending data to a server. It provides an intuitive and efficient way to interact with backend services, enabling seamless data exchange between the frontend and backend of the portfolio. - To ensure smooth navigation within the portfolio, Vue Router is employed. Vue Router is the official routing library for VueJS. It enables the creation of dynamic, single-page applications with multiple views or pages. By utilizing Vue Router, the portfolio can have separate routes for different sections, allowing users to navigate between different pages without the need for full page reloads. - In addition to the functional aspects, the portfolio also features a dark mode system. Dark mode provides an alternative color scheme that uses darker colors, which can be easier on the eyes, reduce eye strain, and conserve device battery life. To provide a seamless experience for users, the selected mode (dark or light) is stored in the local storage of the user's browser. This means that even if the user refreshes the page or closes the browser, the portfolio remembers their preferred mode and applies it consistently."
+        "Description": "My portfolio is a personal project created using VueJS (JavaScript) with Vuetify. VueJS is a popular JavaScript framework for building user interfaces, and Vuetify is a UI component library that provides ready-to-use components following the Material Design guidelines. Together, VueJS and Vuetify offer a powerful combination for developing visually appealing and interactive web applications. - To enhance the functionality of the portfolio, various libraries have been incorporated. One of them is I18n, which stands for Internationalization. I18n allows for easy translation and localization of the portfolio into multiple languages. This feature is crucial for reaching a broader audience and providing a personalized experience to users who prefer different languages. - For handling HTTP requests, the portfolio utilizes Axios, a widely used JavaScript library. Axios simplifies the process of making asynchronous HTTP requests, such as retrieving data from APIs or sending data to a server. - To ensure smooth navigation within the portfolio, Vue Router is employed. Vue Router is the official routing library for VueJS. It enables the creation of dynamic, single-page applications with multiple views or pages. By utilizing Vue Router, the portfolio can have separate routes for different sections, allowing users to navigate between different pages without the need for full page reloads. - In addition to the functional aspects, the portfolio also features a dark mode system. Dark mode provides an alternative color scheme that uses darker colors, which can be easier on the eyes, reduce eye strain, and conserve device battery life. To provide a seamless experience for users, the selected mode (dark or light) is stored in the local storage of the user's browser. This means that even if the user refreshes the page or closes the browser, the portfolio remembers their preferred mode and applies it consistently.",
+        "Skills": "Vuejs 3,Vuetify,I18n,Axios,Vue Router,LocalStorage,Git"
       },
       "Three": 
       {
         "Title": "EasySave",
         "Date": "December 2022",
         "Website": "https://github.com/Gammelinne/Easysave",
-        "Description": "EasySave is a file backup software. It was a school project developed by a team of 4 students. I was responsible for the software development, particularly using the MVVM pattern. It was built with: - Visual Studio 2022 (Enterprise version) - Visual Paradigm (for diagrams) - Azure Repos Version 1.0"
+        "Description": "EasySave is a file backup software that was developed as a school project by a team of 4 students. I was responsible for software development, with a specific focus on implementing the MVVM (Model-View-ViewModel) pattern. - During the development process, we utilized a range of tools and technologies. We worked with Visual Studio 2022 (Enterprise version), which provided a powerful and versatile integrated development environment. Visual Studio enabled us to create a robust and functional application, offering advanced debugging features, version control, and seamless integration with third-party tools. - For designing and modeling our application, we utilized Visual Paradigm, a visual modeling tool. This allowed us to create class diagrams, sequence diagrams, and other models to plan and organize our development effectively. - Regarding source code management and team collaboration, we leveraged Azure Repos, a Git repository hosting service provided by Microsoft. This facilitated collaborative work, enabling us to track code changes and effectively manage branches and project versions. - EasySave was developed as version 1.0, marking the initial release of the software. Throughout the development process, we prioritized creating a user-friendly interface while ensuring the reliability and security of file backups. - This project provided me with valuable experience in software development, team collaboration, and the utilization of modern development tools. I had the opportunity to apply the principles of the MVVM pattern, which promotes clear separation of responsibilities between business logic, presentation, and data management.",
+        "Skills": "C#,WPF,Visual Studio 2022,Visual Paradigm,Azure Repos, Git"
       },
       "Four": 
       {
         "Title": "Discord Bot",
         "Date": "February 2022",
         "Website": "https://github.com/Gammelinne/Bot-discord",
-        "Description": "My first Discord bot to learn JavaScript."
+        "Description": "My first Discord bot is a project I undertook to learn the JavaScript programming language and explore application development on the Discord platform. To build this bot, I utilized the Discord.js library, which is specifically designed to interact with the Discord API. - I began by creating a bot account on the Discord Developer Portal, which provided me with a unique authentication token. This token is used by my bot to connect to Discord as a separate entity. - Next, I set up my development environment by installing Node.js, a platform that enables server-side execution of JavaScript applications. Node.js allowed me to run my bot as a standalone application capable of responding to events and commands on Discord servers. - Using Discord.js, I created custom features for my bot. For example, I implemented the 'interaction' command, which allows server administrators to view interactions taking place. - Another command I added is 'ban,' which allows for the banning of a member from the server. This command accepts two options: 'membre' to specify the member to be banned and 'raison' to provide an optional reason. - I also included the 'github' command, which displays a link to my source code on GitHub, and the 'serveur' command, which enables users to view various server-related information. - To add an element of fun to my bot, I created the 'al' command, which allows users to play the 'Guess the Number' game. This command accepts the 'numero' option, allowing the user to choose a number. - Another feature I implemented is the 'pof' command, which allows users to play the 'Heads or Tails' game. - The 'covid' command enables users to select COVID-19-related data. This command utilizes an external API to fetch up-to-date information. I used the fetch function to send a request to the API and retrieve information on COVID-19 deaths, individuals in intensive care, hospitalized individuals, or confirmed cases. Users can choose from these options using the 'donnees' option of the command. - The bot also includes the 'nasa' command, which displays the NASA 'Picture of the Day.' For this, I used another external API that provides NASA images. I also utilized the fetch function to retrieve the data for the daily image. - Lastly, I added the 'annonce' command, which allows for the posting of announcements. This command accepts the 'message' option, allowing users to enter the announcement message. - Through this project, I have gained a better understanding of the JavaScript language, as well as foundational concepts of object-oriented programming. I have also explored the Discord API, interactive bot creation features, and integration of external APIs to enhance my bot's functionality.",
+        "Skills": "JavaScript,Node.js,Discord.js,Visual Studio Code,GitHub"
       }
     },
     "Hobbies": {
       "Title": "My Hobbies",
       "One": {
           "Title": "Music",
-          "Description": "I have been playing the drums since the age of 7 and joined a band 3 years ago. Here's a demo of our band covering Radiohead's 'No Surprise': "
+          "Description": "Since the age of 6, I have been enrolled in the Ouistreham Music School. I started with two years of musical initiation, and it was during my second year that I discovered the instrument I still practice today: the drums. In my sophomore year, I had the incredible opportunity to join the junior orchestra of the community center, which allowed me to perform in more significant venues such as the CHU de Caen, the Fête de la Musique, and even abroad in Germany. For the past four years, I have been part of the contemporary music scene in Ouistreham. Throughout these four years, we have had the opportunity to perform in several concerts. Here is a demo of our rendition of Radiohead's 'No Surprise' :"
       },
       "Two": {
           "Title": "Judo / Taïso",
@@ -134,7 +140,7 @@
   },
   "Contact": {
       "Title": "Contact Me",
-      "Description": "If you wish to contact me, you can do so using the form below:",
+      "Description": "If you wish to contact me, you can do so directly via my email or using the form below:",
       "Name": "Name",
       "Email": "Email",
       "Message": "Message",
@@ -142,7 +148,10 @@
       "Success": "Your message has been successfully sent!",
       "GeneralError": "Please fill in all the fields.",
       "EmailError": "Please enter a valid email address.",
-      "CriticError": "An error occurred on my side, please try again later."
+      "CriticError": "An error occurred on my side, please try again later.",
+      "Info":{
+        "Birthday": "14 August 2001"
+      }
   },
     "Routes": {
       "Title" : "API Routes",

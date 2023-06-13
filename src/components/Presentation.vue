@@ -3,7 +3,7 @@
     <v-container>
       <v-row>
         <v-col cols="12" md="4">
-          <v-img class="Avatar mx-auto" src="../assets/images/photo_profile.jpeg" width="150" height="150" />
+          <v-img class="Avatar mx-auto" src="../assets/images/Moi.jpeg" width="175" height="175" />
         </v-col>
         <v-col cols="12" md="8">
           <v-card elevation="3">
@@ -136,7 +136,7 @@ export default {
   border-radius: 50%;
   border: 2px solid #fff;
   box-shadow: 0 0 0 5px #fff;
-  margin-top: 15%;
+  margin-top: 25%;
 }
 .v-card-actions {
   justify-content: center;
