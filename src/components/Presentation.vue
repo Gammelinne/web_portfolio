@@ -10,10 +10,36 @@
             <v-card-text>
               <h2 class="text-center my-3">
                 {{ $t('App.Presentation.Title') }}</h2>
-              <p style="text-align: justify;">{{ $t('App.Presentation.Description') }} <a target="_blank" href="https://lahyra.com">Lahyra</a></p>
+              <p style="text-align: justify;">{{ $t('App.Presentation.Description') }}<a target="_blank" href="https://lahyra.com">https://Lahyra.com</a></p>
             </v-card-text>
-            <v-card-actions>
+            <v-divider></v-divider>
+            <v-card-text class="text-center">
+              <h3 class="mb-3">{{ $t('App.Contact.Info.Title') }}</h3>
+              <v-row>
+                <v-col cols="12" sm="6" md="4">
+                  <v-icon>mdi-calendar</v-icon> {{ $t('App.Contact.Info.Birthday') }}
+                </v-col>
+                <v-col cols="12" sm="6" md="4">
+                  <v-icon>mdi-account</v-icon> RENAULT Kylian
+                </v-col>
+                <v-col cols="12" sm="6" md="4">
+                  <v-icon>mdi-phone</v-icon> +33 6 67 59 06 50
+                </v-col>
+                <v-col cols="12" sm="6" md="4">
+                  <v-icon>mdi-email</v-icon> <a target="_blank" href="mailto:kylian.renault@viacesi.fr"> kylian.renault@viacesi.fr </a>
+                </v-col>
+                <v-col cols="12" sm="6" md="4">
+                  <v-icon>mdi-map-marker</v-icon> Lion-sur-Mer, 14780
+                </v-col>
+                <v-col cols="12" sm="6" md="4">
+                  <v-icon>mdi-earth</v-icon> France
+                </v-col>
+              </v-row>
+            </v-card-text>
+            <v-divider></v-divider>
+            <div class="text-center mt-5">
               <v-btn
+                class="mx-2 my-1"
                 plain
                 variant="outlined"
                 color="primary"
@@ -24,6 +50,7 @@
                 {{ $t('App.Presentation.Resume') }}
               </v-btn>
               <v-btn
+                class="mx-2 my-1"
                 plain
                 variant="outlined"
                 color="primary"
@@ -33,9 +60,8 @@
               <v-icon>mdi-file-pdf</v-icon>
                 {{ $t('App.Presentation.CoverLetter') }}
               </v-btn>
-            </v-card-actions>
-            <v-card-actions>
               <v-btn
+                class="mx-2 my-1"
                 plain
                 variant="outlined"
                 color="primary"
@@ -46,6 +72,7 @@
                 GitHub
               </v-btn>
               <v-btn
+                class="mx-2 my-1"
                 plain
                 variant="outlined"
                 color="primary"
@@ -55,7 +82,7 @@
               <v-icon>mdi-linkedin</v-icon>
                 LinkedIn
               </v-btn>
-            </v-card-actions>
+            </div>
             <v-card-actions>
              <v-btn
                 text
@@ -101,7 +128,7 @@ export default {
   },
   methods: {
     handleScroll() {
-      if (window.scrollY > 350) {
+      if (window.scrollY > 700) {
         this.is_clicked = true;
       } else {
         this.is_clicked = false;
@@ -130,13 +157,13 @@ export default {
 
 <style scoped>
 #Presentation {
-  margin-top: calc(15% - 48px);
+  margin-top: calc(8% - 48px);
 }
 .Avatar {
   border-radius: 50%;
   border: 2px solid #fff;
   box-shadow: 0 0 0 5px #fff;
-  margin-top: 25%;
+  margin-top: 50%;
 }
 .v-card-actions {
   justify-content: center;
@@ -144,7 +171,7 @@ export default {
 .ScrollButton {
   position: relative;
   z-index: 1;
-  margin-top: 10%;
+  margin-top: 8%;
   transform: translateX(-50%);
   cursor: pointer;
   /* animation bouton floating */
