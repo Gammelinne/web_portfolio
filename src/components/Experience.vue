@@ -87,7 +87,22 @@ export default {
     updateExperiences() {
       this.Experiences = [
         {
-          id: 1,
+          title: this.$t('App.Experience.Eight.Title'),
+          location: this.$t('App.Experience.Eight.Location'),
+          website: this.$t('App.Experience.Eight.Website'),
+          date: this.$t('App.Experience.Eight.Date'),
+          description: this.$t('App.Experience.Eight.Description'),
+          logo: require('../assets/images/logo/logo-aalborg.png'),
+        },
+        {
+          title: this.$t('App.Experience.Seven.Title'),
+          location: this.$t('App.Experience.Seven.Location'),
+          website: this.$t('App.Experience.Seven.Website'),
+          date: this.$t('App.Experience.Seven.Date'),
+          description: this.$t('App.Experience.Seven.Description'),
+          logo: require('../assets/images/logo/crococlublogo.png'),
+        },
+        {
           title: this.$t('App.Experience.One.Title'),
           location: this.$t('App.Experience.One.Location'),
           website: this.$t('App.Experience.One.Website'),
@@ -96,7 +111,6 @@ export default {
           logo: require('../assets/images/logo/Qwice.jpeg'),
         },
         {
-          id: 2,
           title: this.$t('App.Experience.Two.Title'),
           location: this.$t('App.Experience.Two.Location'),
           website: this.$t('App.Experience.Two.Website'),
@@ -105,7 +119,6 @@ export default {
           logo: require('../assets/images/logo/Tdclic.jpeg'),
         },
         {
-          id: 3,
           title: this.$t('App.Experience.Three.Title'),
           location: this.$t('App.Experience.Three.Location'),
           website: this.$t('App.Experience.Three.Website'),
@@ -114,7 +127,6 @@ export default {
           logo: require('../assets/images/logo/pavillon.jpeg'),
         },
         {
-          id: 4,
           title: this.$t('App.Experience.Four.Title'),
           location: this.$t('App.Experience.Four.Location'),
           website: this.$t('App.Experience.Four.Website'),
@@ -123,7 +135,6 @@ export default {
           logo: require('../assets/images/logo/logo-festyland.png'),
         },
         {
-          id: 5,
           title: this.$t('App.Experience.Five.Title'),
           location: this.$t('App.Experience.Five.Location'),
           website: this.$t('App.Experience.Five.Website'),
@@ -132,7 +143,6 @@ export default {
           logo: require('../assets/images/logo/mgm.png'),
         },
         {
-          id: 6,
           title: this.$t('App.Experience.Six.Title'),
           location: this.$t('App.Experience.Six.Location'),
           website: this.$t('App.Experience.Six.Website'),

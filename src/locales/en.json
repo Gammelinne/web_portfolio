@@ -1,62 +1,75 @@
 {
-  "App" :
-  {
-    "Title" : "RENAULT Kylian",
-    "Presentation" :{
-      "FirstTitle" : "Presentation",
-      "Title" : "Web & Mobile Developer",
-      "Description" : "Currently a student in my third year of engineering studies, having completed my first two years in a preparatory class at CESI school in Caen, I am looking for a 17-week internship starting on September 4th, 2023. Passionate about computer science, I am also working on a web application similar to a social network with authentication and websockets, which you can find at the following address:",
-      "Resume" : "Resume",
-      "CoverLetter" : "Cover Letter"
+  "App": {
+    "Title": "RENAULT Kylian",
+    "Presentation": {
+      "FirstTitle": "Presentation",
+      "Title": "Web & Mobile Developer",
+      "Description": "Currently a fourth-year engineering student at CESI in Caen, I am actively seeking an internship starting on September 2, 2024, for my final year of studies. With a passion for computer science, I am currently working on developing a professional Web application template created with vueJS (frontend) and adonisJS (backend) that includes features such as authentication, email sending, logging, Cron, request limiting, Websockets, google authentification, etc. You can explore this project further at the following address:",
+      "Resume": "Resume",
+      "CoverLetter": "Cover Letter"
     },
-    "Formation" : {
-      "Title" : "Formations",
-      "Website" : "Learn more",
-      "One" : {
-        "Title" : "CESI Engineering School: Computer Science specialization",
-        "Date" : "Since September 2022",
-        "Website" : "https://www.cesi.fr/",
+    "Formation": {
+      "Title": "Formations",
+      "Website": "Learn more",
+      "One": {
+        "Title": "CESI Engineering School: Computer Science specialization",
+        "Date": "Since September 2022",
+        "Website": "https://www.cesi.fr/",
         "Description": "Automony, Teamwork, Network, Development, Project Management, English",
-        "Location" : "4 place boston - 14200 Hérouville-Saint-Clair"
+        "Location": "4 place boston - 14200 Hérouville-Saint-Clair"
       },
-      "Two":{
-        "Title" : "Integrated preparatory class: Computer Science minor",
-        "Date" : "09/2020 - 07/2022",
-        "Website" : "https://www.cesi.fr/",
+      "Two": {
+        "Title": "Integrated preparatory class: Computer Science minor",
+        "Date": "09/2020 - 07/2022",
+        "Website": "https://www.cesi.fr/",
         "Description": "Group work,Mathematics,Computer science,Physics,English",
-        "Location" : "4 place boston - 14200 Hérouville-Saint-Clair"
+        "Location": "4 place boston - 14200 Hérouville-Saint-Clair"
       },
-      "Three" : {
-        "Title" : "First year of Bachelor's degree in Physics with computer science option",
-        "Date" : "09/2019 - 07/2020",
-        "Website" : "https://uniformsup.unicaen.fr/catalogue/formation/licences/5358-licence-physique?s=ufrdessciences&r=1485246625394",
+      "Three": {
+        "Title": "First year of Bachelor's degree in Physics with computer science option",
+        "Date": "09/2019 - 07/2020",
+        "Website": "https://uniformsup.unicaen.fr/catalogue/formation/licences/5358-licence-physique?s=ufrdessciences&r=1485246625394",
         "Description": "Mathematics,Physics,Electricity,English",
-        "Location" : "Avenue de la Côte de Nacre - 14000 Caen"
+        "Location": "Avenue de la Côte de Nacre - 14000 Caen"
       },
-      "Four" : {
-        "Title" : "Obtaining the baccalaureate diploma Series S option SVT",
-        "Date" : "09/2016 - 07/2019",
-        "Website" : "https://lycee-salvador-allende.etab.ac-caen.fr/",
+      "Four": {
+        "Title": "Obtaining the baccalaureate diploma Series S option SVT",
+        "Date": "09/2016 - 07/2019",
+        "Website": "https://lycee-salvador-allende.etab.ac-caen.fr/",
         "Description": "Mathematics,Physics,English,Spanish,SVT,History,Geography,Philosophy",
-        "Location" : "15 Rue Guyon de Guercheville - 14200 Hérouville Saint Clair"
+        "Location": "15 Rue Guyon de Guercheville - 14200 Hérouville Saint Clair"
       }
     },
     "Experience": {
-      "Title" : "Professional experiences",
-      "Website" : "Learn more",
-      "One" : {
-        "Title" : "Web/Mobile Developer Internship - Qwice",
-        "Date" : "01/2023 - 04/2023",
-        "Website" : "https://qwice.org/",
-        "Description": "Making an existing web application compatible with native Android/iOS mobile application with the framework Capacitor.js(android studio / xcode). - Adding push notifications to the application (firebase / php). - Adding and correcting features on the frontend (VueJs).",
-        "Location" : "Normandie incubation - 14000 Caen"
+      "Title": "Professional experiences",
+      "Website": "Learn more",
+      "Eight": {
+        "Title": "International Internship in Web Development/Python",
+        "Date": "09/2023 - 01/2024",
+        "Website": "https://www.resqplus.eu/partners/aalborg-university",
+        "Description": "Developed a dashboard using the Shiny framework to identify areas for improvement in collaboration with esteemed professors such as Mr. HENDRIK KNOCHE and PhD like HAMZAH ZIADEH (Python). - Enhanced the existing dashboard in collaboration with doctors from across Europe who use it (R). - Implemented a chatbot using the Rasa framework to generate specific graphs tailored to the needs of physicians (Python)",
+        "Location": "Aalborg University - 9000 Aalborg (Denmark)"
       },
-      "Two" : {
-        "Title" : "Full Stack Developer Internship",
-        "Date" : "04/2022 - 08/2022",
+      "Seven": {
+        "Title": "Beach Club Animator (seasonal job)",
+        "Date": "08/2023",
+        "Website": "https://www.cabourg-plage.fr/",
+        "Description": "Animator at a beach club, overseeing children aged 5 to 10.",
+        "Location": "Croco Club Cabourg - 14390 Cabourg"
+      },
+      "One": {
+        "Title": "Web/Mobile Developer Internship - Qwice",
+        "Date": "01/2023 - 04/2023",
+        "Website": "https://qwice.org/",
+        "Description": "Making an existing web application compatible with native Android/iOS mobile application with the framework Capacitor.js(android studio / xcode). - Adding push notifications to the application (firebase / php). - Adding and correcting features on the frontend (VueJs).",
+        "Location": "Normandie incubation - 14000 Caen"
+      },
+      "Two": {
+        "Title": "Full Stack Developer Internship",
+        "Date": "04/2022 - 08/2022",
         "Website": "https://boomerangweb.net/gestion-des-achats-bons-de-commande/",
-        "Description" : "Creation of a client management interface for server centralization (Laravel + Vue.js + MySQL). - Creation of bash scripts to determine the status of servers (bash). - Unit testing of the most critical functions (PHPUnit + Mockery).",
-        "Location" : "Boomerang Web - 14000 Caen"
+        "Description": "Creation of a client management interface for server centralization (Laravel + Vue.js + MySQL). - Creation of bash scripts to determine the status of servers (bash). - Unit testing of the most critical functions (PHPUnit + Mockery).",
+        "Location": "Boomerang Web - 14000 Caen"
       },
       "Three": {
         "Title": "Volunteer Fabmanager Assistant",
@@ -66,25 +79,25 @@
         "Location": "Sociocultural Center - Ouistreham"
       },
       "Four": {
-          "Title": "Restaurant Employee",
-          "Date": "07/2019 - 09/2019",
-          "Website": "https://festyland.com/",
-          "Description": "Preparation of customer orders (in the kitchen). - Customer service. - Cleaning of premises.",
-          "Location": "Festyland - 14652 Carpiquet"
+        "Title": "Restaurant Employee (seasonal job)",
+        "Date": "07/2019 - 09/2019",
+        "Website": "https://festyland.com/",
+        "Description": "Preparation of customer orders (in the kitchen). - Customer service. - Cleaning of premises.",
+        "Location": "Festyland - 14652 Carpiquet"
       },
       "Five": {
-          "Title": "Laborer",
-          "Date": "06/2020 - 08/2020",
-          "Website": "https://www.maugergazmedicaux.fr/nos-services/vente-de-materiels-dalimentation-gaz-medicaux/",
-          "Description": "Installation of medical oxygen and air pipes in hospitals. - Installation of medical oxygen and air wall outlets in hospitals. - Installation of medical oxygen and air plants in hospitals.",
-          "Location": "Mauger Gaz Médicaux - 14460 Colombelles"
+        "Title": "Laborer (seasonal job)",
+        "Date": "06/2020 - 08/2020",
+        "Website": "https://www.maugergazmedicaux.fr/nos-services/vente-de-materiels-dalimentation-gaz-medicaux/",
+        "Description": "Installation of medical oxygen and air pipes in hospitals. - Installation of medical oxygen and air wall outlets in hospitals. - Installation of medical oxygen and air plants in hospitals.",
+        "Location": "Mauger Gaz Médicaux - 14460 Colombelles"
       },
       "Six": {
-          "Title": "Laborer",
-          "Date": "08/2018",
-          "Website": "https://www.maugergazmedicaux.fr/nos-services/vente-de-materiels-dalimentation-gaz-medicaux/",
-          "Description": "Installation of medical oxygen and air pipes in hospitals. - Installation of medical oxygen and air wall outlets in hospitals. - Installation of medical oxygen and air plants in hospitals.",
-          "Location": "Mauger Gaz Médicaux - 14460 Colombelles"
+        "Title": "Laborer (seasonal job)",
+        "Date": "08/2018",
+        "Website": "https://www.maugergazmedicaux.fr/nos-services/vente-de-materiels-dalimentation-gaz-medicaux/",
+        "Description": "Installation of medical oxygen and air pipes in hospitals. - Installation of medical oxygen and air wall outlets in hospitals. - Installation of medical oxygen and air plants in hospitals.",
+        "Location": "Mauger Gaz Médicaux - 14460 Colombelles"
       }
     },
     "Project": {
@@ -93,8 +106,7 @@
       "Show": "See description",
       "Hide": "Hide description",
       "Website": "Github",
-      "One": 
-      {
+      "One": {
         "Title": "Lahyra",
         "Date": "Since September 2023",
         "Website": "https://github.com/Gammelinne/Lahyra-back-V2",
@@ -103,24 +115,21 @@
         "Embed": "https:lahyra.com",
         "Skills": "Laravel 10,Vuejs 3,Vuetify,Websocket,PHP 8.2,JWT,Pusher,I18n,Passport,Axios,LocalStorage,Git"
       },
-      "Two": 
-      {
+      "Two": {
         "Title": "Portfolio",
         "Date": "June 2023",
         "Website": "https://github.com/Gammelinne/web_portfolio",
         "Description": "My portfolio is a personal project created using VueJS (JavaScript) with Vuetify. VueJS is a popular JavaScript framework for building user interfaces, and Vuetify is a UI component library that provides ready-to-use components following the Material Design guidelines. Together, VueJS and Vuetify offer a powerful combination for developing visually appealing and interactive web applications. - To enhance the functionality of the portfolio, various libraries have been incorporated. One of them is I18n, which stands for Internationalization. I18n allows for easy translation and localization of the portfolio into multiple languages. This feature is crucial for reaching a broader audience and providing a personalized experience to users who prefer different languages. - For handling HTTP requests, the portfolio utilizes Axios, a widely used JavaScript library. Axios simplifies the process of making asynchronous HTTP requests, such as retrieving data from APIs or sending data to a server. - To ensure smooth navigation within the portfolio, Vue Router is employed. Vue Router is the official routing library for VueJS. It enables the creation of dynamic, single-page applications with multiple views or pages. By utilizing Vue Router, the portfolio can have separate routes for different sections, allowing users to navigate between different pages without the need for full page reloads. - In addition to the functional aspects, the portfolio also features a dark mode system. Dark mode provides an alternative color scheme that uses darker colors, which can be easier on the eyes, reduce eye strain, and conserve device battery life. To provide a seamless experience for users, the selected mode (dark or light) is stored in the local storage of the user's browser. This means that even if the user refreshes the page or closes the browser, the portfolio remembers their preferred mode and applies it consistently.",
         "Skills": "Vuejs 3,Vuetify,I18n,Axios,Vue Router,LocalStorage,Git"
       },
-      "Three": 
-      {
+      "Three": {
         "Title": "EasySave",
         "Date": "December 2022",
         "Website": "https://github.com/Gammelinne/Easysave",
         "Description": "EasySave is a file backup software that was developed as a school project by a team of 4 students. I was responsible for software development, with a specific focus on implementing the MVVM (Model-View-ViewModel) pattern. - During the development process, we utilized a range of tools and technologies. We worked with Visual Studio 2022 (Enterprise version), which provided a powerful and versatile integrated development environment. Visual Studio enabled us to create a robust and functional application, offering advanced debugging features, version control, and seamless integration with third-party tools. - For designing and modeling our application, we utilized Visual Paradigm, a visual modeling tool. This allowed us to create class diagrams, sequence diagrams, and other models to plan and organize our development effectively. - Regarding source code management and team collaboration, we leveraged Azure Repos, a Git repository hosting service provided by Microsoft. This facilitated collaborative work, enabling us to track code changes and effectively manage branches and project versions. - EasySave was developed as version 1.0, marking the initial release of the software. Throughout the development process, we prioritized creating a user-friendly interface while ensuring the reliability and security of file backups. - This project provided me with valuable experience in software development, team collaboration, and the utilization of modern development tools. I had the opportunity to apply the principles of the MVVM pattern, which promotes clear separation of responsibilities between business logic, presentation, and data management.",
         "Skills": "C#,WPF,Visual Studio 2022,Visual Paradigm,Azure Repos, Git"
       },
-      "Four": 
-      {
+      "Four": {
         "Title": "Discord Bot",
         "Date": "February 2022",
         "Website": "https://github.com/Gammelinne/Bot-discord",
@@ -131,15 +140,15 @@
     "Hobbies": {
       "Title": "My Hobbies",
       "One": {
-          "Title": "Music",
-          "Description": "Since the age of 6, I have been enrolled in the Ouistreham Music School. I started with two years of musical initiation, and it was during my second year that I discovered the instrument I still practice today: the drums. In my sophomore year, I had the incredible opportunity to join the junior orchestra of the community center, which allowed me to perform in more significant venues such as the CHU de Caen, the Fête de la Musique, and even abroad in Germany. For the past four years, I have been part of the contemporary music scene in Ouistreham. Throughout these four years, we have had the opportunity to perform in several concerts. Here is a demo of our rendition of Radiohead's 'No Surprise' :"
+        "Title": "Music",
+        "Description": "Since the age of 6, I have been enrolled in the Ouistreham Music School. I started with two years of musical initiation, and it was during my second year that I discovered the instrument I still practice today: the drums. In my sophomore year, I had the incredible opportunity to join the junior orchestra of the community center, which allowed me to perform in more significant venues such as the CHU de Caen, the Fête de la Musique, and even abroad in Germany. For the past four years, I have been part of the contemporary music scene in Ouistreham. Throughout these four years, we have had the opportunity to perform in several concerts. Here is a demo of our rendition of Radiohead's 'No Surprise' :"
       },
       "Two": {
-          "Title": "Judo / Taïso",
-          "Description": "I have been practicing judo since the age of 7 and currently hold a brown belt. I am deeply committed to my club and participate in various events such as refereeing or the telethon, as shown in the photo below from the 2021 telethon."
+        "Title": "Judo / Taïso",
+        "Description": "I have been practicing judo since the age of 7 and currently hold a brown belt. I am deeply committed to my club and participate in various events such as refereeing or the telethon, as shown in the photo below from the 2021 telethon."
       }
-  },
-  "Contact": {
+    },
+    "Contact": {
       "Title": "Contact Me",
       "Description": "If you wish to contact me, you can do so directly via my email or using the form below:",
       "Name": "Name",
@@ -150,14 +159,14 @@
       "GeneralError": "Please fill in all the fields.",
       "EmailError": "Please enter a valid email address.",
       "CriticError": "An error occurred on my side, please try again later.",
-      "Info":{
+      "Info": {
         "Title": "My informations",
         "Birthday": "14 August 2001"
       }
-  },
+    },
     "Routes": {
-      "Title" : "API Routes",
-      "Table":{
+      "Title": "API Routes",
+      "Table": {
         "Method": "Method",
         "Endpoint": "Endpoint",
         "Description": "Description"

@@ -10,7 +10,7 @@
             <v-card-text>
               <h2 class="text-center my-3">
                 {{ $t('App.Presentation.Title') }}</h2>
-              <p style="text-align: justify;">{{ $t('App.Presentation.Description') }}<a target="_blank" href="https://lahyra.com">https://Lahyra.com</a></p>
+              <p style="text-align: justify;">{{ $t('App.Presentation.Description') }}<a target="_blank" href="https://lahyra.fr">https://Lahyra.fr</a></p>
             </v-card-text>
             <v-divider></v-divider>
             <v-card-text class="text-center">
@@ -38,12 +38,12 @@
             </v-card-text>
             <v-divider></v-divider>
             <div class="text-center mt-5">
-              <v-btn
+              <!--<v-btn
                 class="mx-2 my-1"
                 plain
                 variant="outlined"
                 color="primary"
-                href="https://kylianrenault.lahyra.com/assets/Resume.pdf"
+                href="https://kylianrenault.lahyra.fr/assets/Resume.pdf"
                 target="_blank"
                 >
               <v-icon>mdi-file-pdf</v-icon>
@@ -54,12 +54,12 @@
                 plain
                 variant="outlined"
                 color="primary"
-                href="https://kylianrenault.lahyra.com/assets/coverletter.pdf"
+                href="https://kylianrenault.lahyra.fr/assets/coverletter.pdf"
                 target="_blank"
                 >
               <v-icon>mdi-file-pdf</v-icon>
                 {{ $t('App.Presentation.CoverLetter') }}
-              </v-btn>
+              </v-btn>-->
               <v-btn
                 class="mx-2 my-1"
                 plain
