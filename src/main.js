@@ -5,8 +5,6 @@ import vuetify from './plugins/vuetify'
 import { loadFonts } from './plugins/webfontloader'
 import i18n from './i18n'
 
-
-
 loadFonts()
 
 createApp(App)

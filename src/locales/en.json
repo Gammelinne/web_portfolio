@@ -112,7 +112,6 @@
         "Website": "https://github.com/Gammelinne/Lahyra-back-V2",
         "Description": "Lahyra is my most significant personal project. It was built using VueJS (JavaScript) for the frontend and Laravel for the backend (PHP). This project encompasses a wide range of advanced features that make it robust and secure. - First and foremost, let's delve into the JWT (JSON Web Token) protected authentication. JWT is a highly popular authentication mechanism utilized in modern web applications. The primary advantage of JWT is its ability to maintain authentication state on the client side, eliminating the need for the server to store authentication state for each user. Instead, when a user successfully logs in, they receive a JWT token containing encoded credential information. This token is then included in every subsequent request sent to the server, enabling the server to authenticate and authorize the user for each request. - Moving on to language management with I18n, Lahyra has the capability to support multiple languages. This is a crucial feature for applications targeting an international audience as it allows users to select their preferred language. With this functionality, texts and messages displayed to the user can be easily and dynamically translated, providing a more personalized experience. - Another important feature of Lahyra is the ability to upload and store photos. Users can upload images to the site, which are then securely stored on a server or an appropriate storage service. This feature offers a convenient solution for users who want to share photos or images as part of their Lahyra experience. - Additionally, Lahyra integrates WebSocket with Pusher. WebSocket is a bidirectional communication protocol that enables real-time communication between the client and the server. By leveraging WebSocket in Lahyra, instant and real-time updates can be achieved without the need to refresh the page. This results in a more responsive user experience, especially for features that require real-time updates, such as notifications or live conversations. - Furthermore, by clicking on 'API Routes', users can access a comprehensive list of all the routes functioning on the site. Some of these routes are protected by administrator privileges, meaning they can only be accessed by users with administrative rights. This security measure ensures that certain sensitive or restricted features can only be utilized by authorized users, thereby enhancing the overall security of the application.",
         "Route": "API Routes",
-        "Embed": "https:lahyra.com",
         "Skills": "Laravel 10,Vuejs 3,Vuetify,Websocket,PHP 8.2,JWT,Pusher,I18n,Passport,Axios,LocalStorage,Git"
       },
       "Two": {
@@ -135,6 +134,14 @@
         "Website": "https://github.com/Gammelinne/Bot-discord",
         "Description": "My first Discord bot is a project I undertook to learn the JavaScript programming language and explore application development on the Discord platform. To build this bot, I utilized the Discord.js library, which is specifically designed to interact with the Discord API. - I began by creating a bot account on the Discord Developer Portal, which provided me with a unique authentication token. This token is used by my bot to connect to Discord as a separate entity. - Next, I set up my development environment by installing Node.js, a platform that enables server-side execution of JavaScript applications. Node.js allowed me to run my bot as a standalone application capable of responding to events and commands on Discord servers. - Using Discord.js, I created custom features for my bot. For example, I implemented the 'interaction' command, which allows server administrators to view interactions taking place. - Another command I added is 'ban,' which allows for the banning of a member from the server. This command accepts two options: 'membre' to specify the member to be banned and 'raison' to provide an optional reason. - I also included the 'github' command, which displays a link to my source code on GitHub, and the 'serveur' command, which enables users to view various server-related information. - To add an element of fun to my bot, I created the 'al' command, which allows users to play the 'Guess the Number' game. This command accepts the 'numero' option, allowing the user to choose a number. - Another feature I implemented is the 'pof' command, which allows users to play the 'Heads or Tails' game. - The 'covid' command enables users to select COVID-19-related data. This command utilizes an external API to fetch up-to-date information. I used the fetch function to send a request to the API and retrieve information on COVID-19 deaths, individuals in intensive care, hospitalized individuals, or confirmed cases. Users can choose from these options using the 'donnees' option of the command. - The bot also includes the 'nasa' command, which displays the NASA 'Picture of the Day.' For this, I used another external API that provides NASA images. I also utilized the fetch function to retrieve the data for the daily image. - Lastly, I added the 'annonce' command, which allows for the posting of announcements. This command accepts the 'message' option, allowing users to enter the announcement message. - Through this project, I have gained a better understanding of the JavaScript language, as well as foundational concepts of object-oriented programming. I have also explored the Discord API, interactive bot creation features, and integration of external APIs to enhance my bot's functionality.",
         "Skills": "JavaScript,Node.js,Discord.js,Visual Studio Code,GitHub"
+      },
+      "Five": {
+        "Title": "WebApp Template",
+        "Date": "Since October 2023",
+        "Website": "https://github.com/Gammelinne/backend-template-for-web-app",
+        "Description": "WebApp Template is a comprehensive project that combines a powerful backend based on AdonisJS with a dynamic frontend built with VueJS. This integration provides a robust solution for the development of modern web applications. Key features include: - Secure Authentication: Utilizing JSON Web Token (JWT) to maintain client-side authentication state. This provides enhanced security without the need to store authentication state on the server. - Multilingual Support (I18n): Integrated multilingual support allows users to choose their preferred language. Texts and messages are dynamically translated, providing a personalized user experience. - Secure Image Storage: Users can upload images, securely stored on a server or an appropriate storage service. This facilitates image sharing as part of the application usage. - WebSocket with Pusher: WebSocket integration for real-time updates. Features like notifications and live chats are enhanced with instant updates, eliminating the need for page reloading. - Secured API Routes: Some routes are protected by administrator permissions, ensuring that sensitive features are only accessible to authorized users. - The backend, built with AdonisJS, offers advanced user management, strengthened security with hashed passwords, automatic log rotation, and a rate-limiting mechanism to prevent spam. Migrations and seeders facilitate database management, while project organization follows the MVC model for optimal maintenance and extensibility.",
+        "Embed": "https://Lahyra.fr",
+        "Skills": "AdonisJS, Vue.js, Vuetify, WebSockets, JWT, Pusher, I18n, Passport, Axios, LocalStorage, Git, RESTful APIs, GraphQL, Docker, Continuous Integration, Unit Testing, End-to-End Testing"
       }
     },
     "Hobbies": {
@@ -164,7 +171,95 @@
         "Birthday": "14 August 2001"
       }
     },
-    "Routes": {
+    "TemplateRoutes": {
+      "Title": "API Routes",
+      "Table": {
+        "Method": "Method",
+        "Endpoint": "Endpoint",
+        "Description": "Description"
+      },
+      "1": {
+        "Method": "GET",
+        "Endpoint": "/users/me",
+        "Description": "Retrieves information about the currently authenticated user."
+      },
+      "2": {
+        "Method": "PUT",
+        "Endpoint": "/users/update",
+        "Description": "Updates user information."
+      },
+      "3": {
+        "Method": "DELETE",
+        "Endpoint": "/users/delete",
+        "Description": "Deletes user account."
+      },
+      "4": {
+        "Method": "POST",
+        "Endpoint": "/register",
+        "Description": "Registers a new user."
+      },
+      "5": {
+        "Method": "POST",
+        "Endpoint": "/login",
+        "Description": "Logs in a user."
+      },
+      "6": {
+        "Method": "POST",
+        "Endpoint": "/reset-password",
+        "Description": "Initiates the password reset process."
+      },
+      "7": {
+        "Method": "POST",
+        "Endpoint": "/logout",
+        "Description": "Logs out the authenticated user."
+      },
+      "8": {
+        "Method": "GET",
+        "Endpoint": "/verify-email/:email",
+        "Description": "Verifies the user's email address."
+      },
+      "9": {
+        "Method": "POST",
+        "Endpoint": "/resend-verification-email",
+        "Description": "Resends the verification email."
+      },
+      "10": {
+        "Method": "POST",
+        "Endpoint": "/reset-password-email",
+        "Description": "Sends a reset password email."
+      },
+      "11": {
+        "Method": "GET",
+        "Endpoint": "/posts",
+        "Description": "Retrieves a list of posts."
+      },
+      "12": {
+        "Method": "GET",
+        "Endpoint": "/posts/:id",
+        "Description": "Retrieves details of a specific post."
+      },
+      "13": {
+        "Method": "POST",
+        "Endpoint": "/posts",
+        "Description": "Creates a new post."
+      },
+      "14": {
+        "Method": "PUT",
+        "Endpoint": "/posts/:id",
+        "Description": "Updates a specific post."
+      },
+      "15": {
+        "Method": "DELETE",
+        "Endpoint": "/posts/:id",
+        "Description": "Deletes a specific post."
+      },
+      "16": {
+        "Method": "POST",
+        "Endpoint": "/google/redirect",
+        "Description": "Handles Google OAuth2 redirection."
+      }
+    },    
+    "LahyraRoutes": {
       "Title": "API Routes",
       "Table": {
         "Method": "Method",
